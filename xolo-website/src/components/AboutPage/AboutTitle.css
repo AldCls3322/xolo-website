@@ -1,0 +1,29 @@
+#about-section-title-container {
+    position: relative;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+}
+
+.about-section-title-img {
+    position: absolute;
+    top: -10vh;
+    z-index: 8;
+    height: calc(500px + 10vh);
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.about-section-title-text {
+    z-index: 9;
+    width: 100%;
+    font-size: 4rem;
+    font-weight: bolder;
+    background-image: linear-gradient(to right, transparent, var(--color-graywhite),transparent);
+    color: var(--color-body);
+}

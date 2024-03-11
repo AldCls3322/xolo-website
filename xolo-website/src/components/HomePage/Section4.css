@@ -1,0 +1,225 @@
+#section4-container {
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    height: auto;
+    padding-top: 10%;
+    padding-bottom: 2em;
+    background: linear-gradient(var(--color-body), transparent);
+    /* background: var(--color-text); */
+}
+
+.page-padding {
+    max-height: 100%;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.section4-wrapper {
+    width: 100%;
+    height: 100%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-radius: 30px;
+    background: var(--color-body);
+    box-shadow: var(--color-body80) 0px 54px 55px, var(--color-body40) 0px -12px 30px, var(--color-body40) 0px 4px 6px, var(--color-body30) 0px 12px 13px, var(--color-body20) 0px -3px 5px;
+}
+
+.container-1280 {
+    width: 100%;
+    max-width: 80em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.expect-wrapper {
+    max-width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.expect-text-wrapper {
+    width: 45%;
+    margin-left: 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 3em;
+}
+
+.heading-48 {
+    text-transform: capitalize;
+    /* font-family: Rubik, sans-serif;
+    font-size: 3em; */
+    font-weight: 600;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.expect-subheading-wrapper {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.expect-img-wrapper {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    /* height: 31.38em; */
+    max-width: 38.75em;
+    margin-top: auto;
+}
+
+.img-full-width.img-radius-64 {
+    border-radius: 64px;
+    height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+    display: inline-block;
+    border: 0;
+}
+
+.expect-card-list {
+    width: 50%;
+    height: 100%;
+    padding-top: 2%;
+    grid-column-gap: 2rem;
+    grid-row-gap: 4rem;
+    color: var(--color-text);
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.expect-card-item {
+    width: 90%;
+}
+
+.expect-card-item-wrapper {
+    background-color: var(--color-contrastdark);
+    border-radius: 32px;
+    padding: 2rem 2.5rem;
+}
+#expect-card-item-wrapper-card2 {
+    background-color: var(--color-contrast2dark);
+}
+#expect-card-item-wrapper-card3 {
+    background-color: var(--color-contrast2darker);
+}
+
+.expected-card-item-header {
+    display: flex;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.expect-card-icon {
+    width: 100%;
+    height: 3rem;
+    max-width: 3rem;
+    background-color: var(--color-text);
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.embed-icon-24 {
+    width: 1.5rem;
+    height: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.w-embed:before,
+.w-embed:after {
+    content: " ";
+    grid-area: 1 / 1 / 2 / 2;
+    display: table;
+}
+
+.section4-svg-shield {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    fill: none;
+}
+
+.expect-card-title {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.heading-24 {
+    text-transform: capitalize;
+    font-family: Rubik, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.text-size-20 {
+    text-transform: none;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.text-size-25 {
+    text-transform: none;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+
+@media screen and (max-width: 700px) {
+    #section4-container {
+        width: 100%;
+    }
+    .page-padding {
+        max-height: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-top: 10em;
+    }
+    .expect-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .expect-text-wrapper {
+        width: 90%;
+        margin-right: 5%;
+        padding-right: 0;
+    }
+    .expect-card-list {
+        margin-top: 2em;
+        width: 100%;
+    }
+    .expected-card-item-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0;
+    }
+    .text-size-25 {
+        visibility: hidden;
+        height: 0px;
+    }
+}

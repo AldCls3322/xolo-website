@@ -1,0 +1,295 @@
+#section1-container {
+    /* Positioning */
+    position: relative;
+
+    /* Display & Box Model | Sizing */
+    display: block;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    /* Color, Background & Text */
+    border-bottom: 1px solid var(--color-text);
+
+    /* Animations and Other */
+    background: var(--color-body);
+}
+
+.section1-title-container {
+    /* Positioning */
+
+    /* Display & Box Model | Sizing */
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    /* Color, Background & Text */
+
+    /* Animations and Other */
+}
+
+.section1-shortbar {
+    /* Positioning */
+
+    /* Display & Box Model | Sizing */
+    width: 30%;
+    height: 3px;
+
+    /* Color, Background & Text */
+    background: var(--color5-cotrastdarker);
+}
+
+.section1-title-text {
+    /* Positioning */
+    padding-left: 1%;
+    padding-right: 1%;
+
+    /* Display & Box Model | Sizing */
+
+    /* Color, Background & Text */
+    font-size: 3rem;
+    font-weight: 500;
+
+    /* Animations and Other */
+}
+
+.section1-longbar {
+    /* Positioning */
+
+    /* Display & Box Model | Sizing */
+    width: 45%;
+    height: 3px;
+
+    /* Color, Background & Text */
+    background: var(--color5-cotrastdarker);
+}
+
+.section1-info-container {
+    /* Positioning */
+
+    /* Display & Box Model | Sizing */
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+
+    /* Color, Background & Text */
+
+    /* Animations and Other */
+}
+
+.section1-info-img-container {
+    /* Positioning */
+
+    /* Display & Box Model | Sizing */
+    display: grid;
+    box-shadow: 0 3px 6px var(--color-contrast2lighter);
+    grid-template-columns: max-content auto;
+    grid-template-rows: auto max-content;
+    
+    width: 400px;
+    height: 300px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    /* Color, Background & Text */
+    background: #333 url(../imgs/black.jpg) center;
+    background-size: cover;
+    color: white;
+    padding: 2rem;
+
+    /* Animations and Other */
+}
+.section1-info-img-container:before, .section1-info-img-container:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+}
+.section1-info-img-container:before{
+    grid-row: 1 / 2;
+    border-right: none;
+    border-bottom: none;
+}
+.section1-info-img-container:after {
+    grid-row: 1 / span 2;
+    border-left: none;
+}
+
+.section1-info-img-title {
+    text-align: left;
+    margin: 1rem 1rem -.5rem 0;
+    font-family: 'Pragati Narrow', sans-serif;
+    font-size: 2rem;
+    max-width: 100%;
+}
+
+.section1-info-desc-container {
+    /* Positioning */
+
+    /* Display & Box Model | Sizing */
+    width: 50%;
+    height: 100%;
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 3%;
+
+    /* Color, Background & Text */
+
+    /* Animations and Other */
+}
+
+.section1-info-desc-title {
+    /* Positioning */
+
+    /* Display & Box Model | Sizing */
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    /* Color, Background & Text */
+    font-size: 3rem;
+    font-family: verdana, Sans-serif;
+    font-weight: 600;
+    color: var(--color-contrast);
+
+    /* Animations and Other */
+}
+
+.section1-info-desc-p {
+    /* Positioning */
+
+    /* Display & Box Model | Sizing */
+    text-align: justify;
+
+    /* Color, Background & Text */
+    font-family: serif, Times;
+    font-size: 1.5rem;
+    color: var(--color-text80);
+
+    /* Animations and Other */
+}
+
+.section1-info-desc-span {
+    width: 100%;
+    text-align: right;
+}
+
+.section1-info-button-container {
+    /* Positioning */
+
+    /* Display & Box Model | Sizing */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+
+    /* Color, Background & Text */
+
+    /* Animations and Other */
+}
+
+.section1-info-button {
+    /* Positioning */
+
+    /* Display & Box Model | Sizing */
+    padding: 1rem 4rem;
+    border: none;
+    border-radius: 10px;
+
+    /* Color, Background & Text */
+    background: var(--color-contrastlight);
+    color: var(--color-body);
+    font-size: 1.4rem;
+    font-family: monospace;
+    text-decoration: none;
+
+    /* Animations and Other */
+    transition: 0.2s ease-out;
+}
+
+.section1-info-button:hover {
+    background: var(--color-body);
+    transition: 0.2s ease-out;
+    cursor: pointer;
+    color: var(--color-cotrastdarker);
+    transition: 0.2s ease-in-out;
+    filter: drop-shadow(0 0 1rem var(--color-contrastlight));
+}
+
+@media screen and (max-width: 1000px) {
+    .section1-info-desc-container {
+        max-width: 50%;
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+}
+
+/***---PHONE SCREENS---***/
+@media screen and (max-width: 700px){
+    #section1-container {
+        height: auto;
+        padding-bottom: 2em;
+    }
+    .section1-title-container {
+        margin-bottom: 0px;
+        height: auto;
+    }
+    .section1-title-text {
+        margin-block-start: 0;
+        margin-block-end: 0.5em;
+    }
+    .section1-shortbar {
+        width: 30%;
+    }
+    h2 {
+        font-size: 1.7rem;
+        font-family: comfortaa;
+    }
+    .section1-info-container {
+        display: block;
+        height: auto;
+    }
+    .section1-info-desc-container {
+        width: 90%;
+        max-width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    .section1-info-desc-container p{
+        font-size: 1.2rem;
+    }
+    .section1-info-desc-span {
+        font-size: 1.2rem;
+    }
+    .section1-info-desc-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .section1-info-desc-p {
+        height: 65vh;
+        overflow: scroll;
+        font-size: 1.1rem;
+        margin-bottom: 5%;
+    }
+    .section1-info-img-container {
+        margin-top: 0px;
+        width: 80%;
+        height: 240px;
+        padding: 6%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #section1-info-img-blank-title {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+}

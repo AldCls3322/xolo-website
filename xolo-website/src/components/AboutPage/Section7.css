@@ -1,0 +1,30 @@
+#Section7Container {
+    display: block;
+    width: 100%;
+    /* height: 100vh; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    /* Color, Background & Text */
+
+    outline: 30px var(--color-body) dotted;
+    background-color: var(--color-graydark);
+    outline-offset: -20px;
+}
+
+.section7-info-img-container {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    margin: 30vh auto;
+}
+.section7-info-img-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: left;
+    border-radius: 0 150px 0 150px;
+}

@@ -1,0 +1,144 @@
+#section3-container{
+    /* Positioning */
+
+    /* Display & Box Model | Sizing */
+    display: block;
+    min-width: 100vh;
+    height: 150vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 5vmax;
+    padding-bottom: 2vmax;
+
+    /* Color, Background & Text */
+    background: linear-gradient(var(--color-body), transparent);
+
+    /* Animations and Other */
+}
+
+.overcoming-img-wrapper {
+    /* Positioning */
+
+    /* Display & Box Model | Sizing */
+    display: flex;
+    width: 90%;
+    height: 50vh;
+    margin: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    /* Color, Background & Text */
+
+    /* Animations and Other */
+}
+
+.section3-centered-img {
+    /* Positioning */
+    z-index: 4;
+
+    /* Display & Box Model | Sizing */
+    height: 100%;
+    width: 640px;
+    object-fit: cover;
+    border-radius: 64px;
+
+    /* Color, Background & Text */
+
+    /* Animations and Other */
+}
+
+.section3-info-container {
+    /* Positioning */
+    
+    /* Display & Box Model | Sizing */
+    display: flex;
+    width: 95%;
+    height: 80vh;
+    margin: auto;
+    justify-content: center ;
+
+    /* Color, Background & Text */
+
+    /* Animations and Other */
+}
+
+#section3-info-desc-centered-container {
+    /* Positioning */
+
+    /* Display & Box Model | Sizing */
+    text-align: center;
+    width: 90%;
+    margin-left: 0;
+    max-width: 1000px;
+
+    /* Color, Background & Text */
+
+    /* Animations and Other */
+}
+
+.section3-info-titlebar {
+    /* Positioning */
+
+    /* Display & Box Model | Sizing */
+    display: flex;
+    width: 80%;
+    height: 1px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* Color, Background & Text */
+    background: var(--color5-contrastdarker)
+
+    /* Animations and Other */
+}
+
+
+#section3-info-desc-p {
+    /* Positioning */
+
+    /* Display & Box Model | Sizing */
+    text-align: center;
+    padding-top: 20px;
+
+    /* Color, Background & Text */
+
+    /* Animations and Other */
+}
+
+@media screen and (max-width: 700px) {
+    #section3-container {
+        height: auto;
+        width: 10vw;
+        /* padding-top: 0;
+        padding-bottom: 0; */
+    }
+
+    .overcoming-img-wrapper {
+        height: 300px;
+        padding-bottom: 0;
+    }
+
+    #section3-info-desc-p {
+        height: 65vh;
+        overflow: scroll;
+        font-size: 1.1rem;
+        margin-bottom: 5%;
+    }
+
+    .section3-info-container {
+        display: block;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .section3-centered-img {
+        width: 320px;
+        height: 240px;
+    }
+}

@@ -1,0 +1,85 @@
+#videoplayer-section-container {
+    /* Positioning */
+    position: relative;
+
+    /* Display & Box Model | Sizing */
+    width: 100%;
+    height: 100vh;
+
+    /* Color, Background & Text */
+
+    /* Animations and Other */
+}
+
+.videoplayer-section-blackbox {
+    /* Positioning */
+    position: absolute;
+    z-index: 6;   
+
+    /* Display & Box Model | Sizing */
+    width: 100%;
+    height: 100%;
+
+    /* Color, Background & Text */
+    background: var(--color-body80);
+
+    /* Animations and Other */
+}
+
+.videoplayer-section-videoplayer{
+    /* Positioning */
+    z-index: 5;
+
+    /* Display & Box Model | Sizing */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    /* Color, Background & Text */
+
+    /* Animations and Other */
+}
+
+.videoplayer-section-text-container{
+    /* Positioning */
+    position: absolute;
+    z-index: 7;
+    top: 0;
+
+    /* Display & Box Model | Sizing */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* Color, Background & Text */
+    color: var(--color-text);
+    /* Animations and Other */
+}
+
+.videoplayer-section-text-title-container{
+    /* Positioning */
+
+    /* Display & Box Model | Sizing */
+    width: 100%;
+    margin-bottom: 3%;
+
+    /* Color, Background & Text */
+
+    /* Animations and Other */
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.videoplayer-section-text-p-container{
+    /* Positioning */
+
+    /* Display & Box Model | Sizing */
+
+    /* Color, Background & Text */
+    font-size: 1.2rem;
+
+    /* Animations and Other */
+}

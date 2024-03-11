@@ -1,0 +1,259 @@
+#messages-section-container {
+    position: relative;
+    width: 90%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 80px;
+    padding-bottom: 5%;
+    background: linear-gradient(var(--color-body), transparent, var(--color-body), var(--color-body));
+}
+
+.xolo-message-container {
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+}
+
+.xolo-message-icon {
+    z-index: 13;
+    background-color: var(--color-contrastlightest);
+    box-shadow: 0 0 5px 1px var(--color-text);
+    max-width: 100px;
+    max-height: 100px;
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+
+    position: relative;
+    top: -40px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.xoloLogo-message {
+    width: 70px;
+    height: 70px;
+}
+
+.user-message-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+
+.received-message-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.received-message {
+    position: relative;
+    z-index: 11;
+    min-width: 190px;
+    min-height: 70px;
+    /* border: 1px solid var(--color-contrastlightest); */
+    background: var(--color-body);
+    border-radius: 0px 15px 15px 10px;
+    margin-right: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    font-size: 1.5rem;
+    text-align: left;
+
+    box-shadow: 0 0 15px 1px var(--color-contrast);
+    text-shadow: 0 0 5px var(--color-contrastlightest);
+}
+.received-message:before {
+    content: "";
+    position: absolute;
+    z-index: 8;
+    top: -40px;
+    left: 0;
+    height: 40px;
+    width: 40px;
+    border-bottom-left-radius: 50%;
+    background: transparent;
+}
+
+.received-message:before {
+    z-index: 8;
+    box-shadow: 0 20px 0 0 var(--color-body);
+}
+.received-message-p {
+    z-index: 11;
+    margin: 0;
+    background-color: var(--color-body);
+}
+
+
+.user-message-icon {
+    z-index: 13;
+    background-color: var(--color-contrastlightest);
+    box-shadow: 0 0 5px 1px var(--color-text);
+    max-width: 100px;
+    max-height: 100px;
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+
+    position: relative;
+    top: -40px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.userLogo-message {
+    width: 50px;
+    height: 50px;
+    color: var(--color-body);
+}
+
+.sent-message {
+    position: relative;
+    min-width: 190px;
+    min-height: 70px;
+    background: var(--color-body);
+    border-radius: 15px 0px 15px 10px;
+    margin-left: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    font-size: 1.5rem;
+    text-align: end;
+
+    box-shadow: 0 0 20px 2px var(--color-contrast);
+    text-shadow: 0 0 5px var(--color-contrastlightest);
+}
+
+.sent-message:before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    border-bottom-right-radius: 50%;
+    background: transparent;
+}
+
+.sent-message:before {
+    box-shadow: 0 20px 0 0 var(--color-body);
+}
+
+.messages-section-button-container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+}
+
+.messages-section-button1-textenter {
+    width: 80%;
+    height: 100%;
+    border-radius: 20px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin-right: 5%;
+    text-decoration: none;
+    color: var(--color-text);
+
+    background-color: var(--color-body);
+    border: 1px solid var(--color-contrast);
+    box-shadow: inset 0 0 10px 1px var(--color-contrast);
+    transition: all 0.4s;
+}
+.messages-section-button1-textenter:hover {
+    transition: all 0.4s;
+    box-shadow: inset 0 0 20px 1px var(--color-contrast);
+    text-shadow: 0 0 5px var(--color-contrastlightest);
+}
+
+.messages-section-button2-textenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100%;
+    border-radius: 50%;
+    text-decoration: none;
+
+    background-color: var(--color-contrast);
+    box-shadow: 0 0 20px 2px var(--color-contrast);
+    transition: all 0.4s;
+}
+.messages-section-button2-textenter:hover {
+    transition: all 0.4s;
+    box-shadow: 0 0 50px 2px var(--color-contrast);
+}
+
+.messages-section-button2-icon {
+    padding-left: 5px;
+    color: var(--color-text);
+    width: 70px;
+    height: 70px;
+}
+
+@media screen and (max-width: 700px) {
+    #messages-section-container {
+        font-size: 1.2rem;
+    }
+    .received-message {
+        font-size: 1rem;
+    }
+    .sent-message {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .messages-section-button2-textenter{
+        width: 70px;
+        height: 70px;
+    }
+    .messages-section-button2-icon{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .xolo-message-icon {
+        visibility: hidden;
+        width: 0;
+    }
+    .user-message-icon {
+        visibility: hidden;
+        width: 0;
+    }
+}

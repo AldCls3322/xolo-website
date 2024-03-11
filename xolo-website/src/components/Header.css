@@ -1,0 +1,149 @@
+#headerContainer {
+    /* Positioning */
+    position: -webkit-sticky; /* makes the header be always atop no matter if you scroll */
+    position: sticky;
+    top: 0;
+    z-index: 20;
+
+    /* Display & Box Model */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+
+    /* Color, Background & Text */
+    background: var(--color-body80);
+    color: var(--color-text);
+
+    /* Animations and Other */
+    transition: background-color 0.25s ease-out;
+}
+
+.iconMenu {
+    /* Positioning */
+
+    /* Display & Box Model | Sizing */
+    margin-right: 2vw;
+
+    /* Color, Background & Text */
+    font-size: 2.5rem;
+
+    /* Animations and Other */
+    transition: all 0.3s ease-in-out;
+    visibility: visible;
+
+    cursor: pointer;
+}
+
+.iconMenu p{
+    font-size: 5rem;
+    transform: translate(-175%, 100%)
+}
+
+.iconMenu:hover{
+    filter: drop-shadow(0 0 3rem var(--color-text));            /* FF~35 */
+    filter: drop-shadow(0 0 0 3rem var(--color-text)); 
+}
+
+.iconClose {
+    /* Positioning */
+
+    /* Display & Box Model | Sizing */
+    margin-left: auto;
+    margin-right: 2vw;
+
+    /* Color, Background & Text */
+    font-size: 2rem;
+
+    /* Animations and Other */
+    transition: all 0.3s ease-in-out;
+    visibility: visible;
+
+    cursor: pointer;
+}
+.iconClose p {
+    font-size: 5rem;
+    transform: translate(-175%, 100%)
+}
+.iconClose:hover{
+    filter: drop-shadow(0 0 1rem var(--color-text));            /* FF~35 */
+    filter: drop-shadow(0 0 0 1rem var(--color-text));            /* MDN */
+}
+
+.logoContainer{
+    /* Positioning */
+
+    /* Display & Box Model | Sizing */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2vw;
+    /* width: 200px; */
+    max-height: 100%;
+
+    /* Color, Background & Text */
+    text-decoration: none;
+    color: white;
+}
+/* Animations and Other */
+.logoContainer:visited, .logoContainer:link {
+    text-decoration: none;
+}
+.logoContainer:active, .logoContainer:focus {
+    color: var(--color-color2);
+}
+.logoContainer:hover {
+    position: relative;
+
+    content: "";
+    cursor: pointer;
+    color: var(--color-text);
+    transition: .25s linear;
+}
+
+.xoloLogo {
+    /* Display & Box Model | Sizing */
+    width: 70px;
+}
+
+.xoloHeaderTitle {
+    /* Positioning */
+
+    /* Display & Box Model | Sizing */
+    display: flex;
+    /* margin-left: right; */
+
+    /* Color, Background & Text */
+    text-align: left;
+    text-decoration: none;
+    color: var(--color-text);
+    font-family: monospace; /*futura-pt-bold*/
+    font-size: 3rem;
+}
+.xoloHeaderTitle:hover{
+    filter: drop-shadow(0 0 1rem var(--color-text));            /* FF~35 */
+}
+
+/***---PHONE SCREENS---***/
+@media screen and (max-width: 700px){
+    #headerContainer {
+        width: 100vw;
+        justify-content: space-between;
+    }
+    .iconMenu, .iconClose {
+        position: relative;
+    }
+    .xoloHeaderTitle:hover{
+        filter: drop-shadow(0 0 1rem var(--color-text));
+    }
+    .xoloHeaderTitle {
+        display: none;
+    }
+}
+/***---PHONE SCREENS---***/
+@media screen and (max-height: 540px){
+    #headerContainer {
+        height: 70px;
+    }
+}
