@@ -1,5 +1,6 @@
 #HomeContainer {
     /* Positioning */
+    position: relative;
     /* z-index: 8; 10 default*/
 
     /* Display & Box Model | Sizing */
@@ -20,6 +21,7 @@
     height: 100vh;
     width: 100%;
     top: 0;
+    transform:translateY(-10vh);
     z-index: 6;
     background: linear-gradient(var(--color-contrastdarker), var(--color-body));
 }
@@ -33,6 +35,7 @@
     width: 100%;
     height: 100vh;
     top: 0;
+    transform: translateY(-10vh);
     z-index: 7;
     backdrop-filter: blur(50px);
 }

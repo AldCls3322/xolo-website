@@ -1,4 +1,4 @@
-#headerContainer {
+#header-container {
     /* Positioning */
     position: -webkit-sticky; /* makes the header be always atop no matter if you scroll */
     position: sticky;
@@ -15,6 +15,7 @@
     /* Color, Background & Text */
     background: var(--color-body80);
     color: var(--color-text);
+    text-decoration: none;
 
     /* Animations and Other */
     transition: background-color 0.25s ease-out;
@@ -42,7 +43,7 @@
 }
 
 .iconMenu:hover{
-    filter: drop-shadow(0 0 3rem var(--color-text));            /* FF~35 */
+    filter: drop-shadow(0 0 3rem var(--color-text));
     filter: drop-shadow(0 0 0 3rem var(--color-text)); 
 }
 
@@ -122,7 +123,7 @@
     font-size: 3rem;
 }
 .xoloHeaderTitle:hover{
-    filter: drop-shadow(0 0 1rem var(--color-text));            /* FF~35 */
+    filter: drop-shadow(0 0 1rem var(--color-text));
 }
 
 /***---PHONE SCREENS---***/

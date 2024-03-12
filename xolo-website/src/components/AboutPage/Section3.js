@@ -13,10 +13,9 @@ function Section3() {
       </div>
       <div class="overcoming-img-wrapper">
         <img
-          src="https://assets-global.website-files.com/655d24f7842a7c1237f12921/6566ad9d5c3a14c07b591b58_philip-brideaux-counselling-homepage-1.jpg"
+          src={coverImg}
           loading="lazy"
           sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 94vw, 43vw"
-          srcset="https://assets-global.website-files.com/655d24f7842a7c1237f12921/6566ad9d5c3a14c07b591b58_philip-brideaux-counselling-homepage-1-p-500.jpg 500w, https://assets-global.website-files.com/655d24f7842a7c1237f12921/6566ad9d5c3a14c07b591b58_philip-brideaux-counselling-homepage-1-p-800.jpg 800w, https://assets-global.website-files.com/655d24f7842a7c1237f12921/6566ad9d5c3a14c07b591b58_philip-brideaux-counselling-homepage-1-p-1080.jpg 1080w, https://assets-global.website-files.com/655d24f7842a7c1237f12921/6566ad9d5c3a14c07b591b58_philip-brideaux-counselling-homepage-1.jpg 1240w"
           alt="a woman is sleeping in a bed with white sheets"
           class="section3-centered-img"
         />
@@ -26,7 +25,7 @@ function Section3() {
           className="section1-info-desc-container"
           id="section3-info-desc-centered-container"
         >
-          <h2 className="section1-info-desc-title">Introducing DORY</h2>
+          <h2 className="section1-info-desc-title" id='section3-info-desc-title'>Introducing DORY</h2>
           <div className="section3-info-titlebar" />
           <p className="section1-info-desc-p" id="section3-info-desc-p">
             DORY is a chatting AI. Message her in Whatsapp.
@@ -51,11 +50,11 @@ function Section3() {
             ultricies vitae sem lacinia blandit. Nunc eget lectus eget nibh
             fringilla rutrum in sed mauris. Nulla blandit efficitur velit nec
             interdum. Mauris scelerisque enim id dui luctus auctor. Maecenas sed
-            arcu odio. 
+            arcu odio.
             <br />
             <br />
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            convallis eros eu dui faucibus faucibus sed sit amet sapien. 
+            convallis eros eu dui faucibus faucibus sed sit amet sapien.
           </p>
         </div>
       </div>

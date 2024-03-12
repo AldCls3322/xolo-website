@@ -7,6 +7,7 @@ import {BrowserRouter as Router, Routes, Route, Switch, useLocation } from 'reac
 /* COMPONENTS */
 import Header from './components/Header';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 import HomeTitle from './components/HomePage/HomeTitle';
 import MessagesSection from "./components/HomePage/MessagesSection";
@@ -80,6 +81,7 @@ function App() {
             ]}
           />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
