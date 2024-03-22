@@ -1,11 +1,27 @@
 import React from 'react'
 import './Section2.css'
 import Img from '../imgs/black.jpg'
+import { motion } from 'framer-motion';
 
 function Section2() {
   return (
     <section className="Container" id="section2-home-container">
-      <div class="content-wrapper" id="yui_3_17_2_1_1709606179919_153">
+      <motion.div
+        class="content-wrapper"
+        id="yui_3_17_2_1_1709606179919_153"
+        initial={{
+          opacity: 0,
+          x: 100,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          transition: {
+            duration: 2.5,
+          },
+        }}
+        viewport={{ once: true }}
+      >
         <div class="content" id="yui_3_17_2_1_1709606179919_152">
           <div class="content" id="yui_3_17_2_1_1709579261295_152">
             <div id="yui_3_17_2_1_1709579261295_151">
@@ -32,10 +48,23 @@ function Section2() {
                         data-test="image-block-fluid-outer-wrapper"
                         id="yui_3_17_2_1_1709606179919_147"
                       >
-                        <div
+                        <motion.div
                           class="fluid-image-animation-wrapper sqs-image sqs-block-alignment-wrapper preFlex flexIn"
                           data-animation-role="image"
                           id="yui_3_17_2_1_1709606179919_146"
+                          initial={{
+                            opacity: 0,
+                            x: -100,
+                          }}
+                          whileInView={{
+                            opacity: 1,
+                            x: 0,
+                            transition: {
+                              delay: 1.5,
+                              duration: 2.5,
+                            },
+                          }}
+                          viewport={{ once: true }}
                         >
                           <div
                             class="fluid-image-container sqs-image-content"
@@ -66,7 +95,7 @@ function Section2() {
                               <div class="fluidImageOverlay" />
                             </div>
                           </div>
-                        </div>
+                        </motion.div>
                       </div>
                     </div>
                   </div>
@@ -90,10 +119,23 @@ function Section2() {
                         data-test="image-block-fluid-outer-wrapper"
                         id="yui_3_17_2_1_1709579261295_163"
                       >
-                        <div
+                        <motion.div
                           class="fluid-image-animation-wrapper sqs-image sqs-block-alignment-wrapper preFlex flexIn"
                           data-animation-role="image"
                           id="yui_3_17_2_1_1709579261295_162"
+                          initial={{
+                            opacity: 0,
+                            x: 100,
+                          }}
+                          whileInView={{
+                            opacity: 1,
+                            x: 0,
+                            transition: {
+                              delay: 1.5,
+                              duration: 2.5,
+                            },
+                          }}
+                          viewport={{ once: true }}
                         >
                           <div
                             class="fluid-image-container sqs-image-content"
@@ -124,7 +166,7 @@ function Section2() {
                               <div class="fluidImageOverlay"></div>
                             </div>
                           </div>
-                        </div>
+                        </motion.div>
                       </div>
                     </div>
                   </div>
@@ -240,7 +282,7 @@ function Section2() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

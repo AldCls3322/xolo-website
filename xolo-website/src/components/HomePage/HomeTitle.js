@@ -1,10 +1,38 @@
 import React, { forwardRef, useState, useEffect } from 'react';
 import {NavLink as Link} from 'react-router-dom';
+import { motion } from 'framer-motion';
 import './HomeTitle.css';
 import HomeTitleImage from '../imgs/black2.jpg';
 import { TypeAnimation } from './TypeAnimation';
 
+const text = [
+  {
+    id: 1,
+    content: "Companion",
+  },
+  {
+    id: 2,
+    content: "Friend",
+  },
+  {
+    id: 3,
+    content: "Dory",
+  },
+];
+
 const HomeTitle = () => {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setIndex((state) => {
+        if (state >= text.length - 1) return 0;
+        return state + 1;
+      });
+    }, 2500);
+    return () => clearInterval(id);
+  }, []);
+
     return (
       <div className="Container" id="HomeContainer">
         {/* <img className='HomeTitleImg' src={HomeTitleImage}/> */}
@@ -12,10 +40,20 @@ const HomeTitle = () => {
           {/* <Icon src={Logo}/> */}
           <div className="TextContainer">
             <h1>YOUR OWN</h1>
-            <div>
+            {/* <div>
               <TypeAnimation className="typeanimation" />
-            </div>
-            <h2>DORY</h2>
+            </div> */}
+            <motion.div
+              className="home-title-animated-text"
+              key={text[index].id}
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: -20, opacity: 0 }}
+              transition={{ ease: "easeInOut" }}
+            >
+              {text[index].content}
+            </motion.div>
+            {/* <h2>DORY</h2> */}
             <div className="home-title-button-container">
               <Link
                 className="button-64"

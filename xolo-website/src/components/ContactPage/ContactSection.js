@@ -1,5 +1,6 @@
 import React, { useState, useEffect, forwardRef } from "react";
 import { MdPhone, MdLocationPin, MdEmail } from "react-icons/md";
+import { motion } from "framer-motion";
 // import Map from './Map';
 // import credentials from './credential';
 import './ContactSection.css'
@@ -7,7 +8,21 @@ import './ContactSection.css'
 function ContactSection() {
   return (
     <div className="Container" id="contact-section-container">
-      <div className="contact-section-cardwhite">
+      <motion.div
+        className="contact-section-cardwhite"
+        initial={{
+          opacity: 0,
+          x: -100,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          transition: {
+            duration: 2,
+          },
+        }}
+        viewport={{ once: true }}
+      >
         <h1 className="contact-section-cardwhite-title-h1">CONTACT US:</h1>
         <div className="contact-section-cardwhite-bar" />
         <div className="contact-section-cardwhite-contents">
@@ -36,8 +51,24 @@ function ContactSection() {
             </form>
           </div>
         </div>
-      </div>
-      <div className="contact-section-cardleft">admin@xolo.com</div>
+      </motion.div>
+      <motion.div
+        className="contact-section-cardleft"
+        initial={{
+          opacity: 0,
+          x: 100,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          transition: {
+            duration: 2,
+          },
+        }}
+        viewport={{ once: true }}
+      >
+        admin@xolo.com
+      </motion.div>
     </div>
   );
 }

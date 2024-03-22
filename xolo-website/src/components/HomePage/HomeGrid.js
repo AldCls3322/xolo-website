@@ -1,24 +1,54 @@
-import React from 'react'
-import './HomeGrid.css'
+import React from 'react';
+import { motion } from 'framer-motion';
+import './HomeGrid.css';
 
 function HomeGrid() {
     return (
-      <section class="section-home-patterns">
+      <section class="section-home-patterns hide-mobile">
         <div class="page-padding">
           <div class="container-1280">
             <div class="padding-section-208">
               <div class="patterns-wrapper">
                 <div class="patterns-list">
                   <div class="patterns-item">
-                    <div class="patterns-item-wrapper">
-                      <h3 class="heading-24">Chats with Empathy</h3>
-                    </div>
+                    <motion.div
+                      class="patterns-item-wrapper"
+                      initial={{
+                        opacity: 0,
+                        x: -100,
+                      }}
+                      whileInView={{
+                        opacity: 1,
+                        x: 0,
+                        transition: {
+                          duration: 2,
+                        },
+                      }}
+                      viewport={{ once: true }}
+                    >
+                      <h3 class="heading-grid">Chats with Empathy</h3>
+                    </motion.div>
                   </div>
                   <div
                     id="w-node-_487c7801-ec6e-768a-e66f-79477abb6c87-37f129cc"
                     class="patterns-item"
                   >
-                    <div class="patterns-item-wrapper background-brown">
+                    <motion.div
+                      class="patterns-item-wrapper background-brown"
+                      initial={{
+                        opacity: 0,
+                        y: -150,
+                      }}
+                      whileInView={{
+                        opacity: 1,
+                        y: 0,
+                        transition: {
+                          delay: 3,
+                          duration: 2,
+                        },
+                      }}
+                      viewport={{ once: true }}
+                    >
                       <div class="embed-pattern-wrapper max-width-280">
                         <div aria-hidden="true" class="embed-icon w-embed">
                           <svg
@@ -52,21 +82,49 @@ function HomeGrid() {
                           </svg>
                         </div>
                       </div>
-                    </div>
+                    </motion.div>
                   </div>
                   <div
                     id="w-node-_9ef3ab28-d8e4-4fe5-d249-7aacd73fa155-37f129cc"
                     class="patterns-item"
                   >
-                    <div class="patterns-item-wrapper">
-                      <h3 class="heading-24">A constant companion</h3>
-                    </div>
+                    <motion.div
+                      class="patterns-item-wrapper"
+                      initial={{
+                        opacity: 0,
+                        x: 100,
+                      }}
+                      whileInView={{
+                        opacity: 1,
+                        x: 0,
+                        transition: {
+                          duration: 2,
+                        },
+                      }}
+                      viewport={{ once: true }}
+                    >
+                      <h3 class="heading-grid">A constant companion</h3>
+                    </motion.div>
                   </div>
                   <div
                     id="w-node-_79002bc6-322b-e844-ff49-3f2804db5280-37f129cc"
                     class="patterns-item"
                   >
-                    <div class="patterns-item-wrapper background-brown">
+                    <motion.div
+                      class="patterns-item-wrapper background-brown"
+                      initial={{
+                        opacity: 0,
+                        x: -100,
+                      }}
+                      whileInView={{
+                        opacity: 1,
+                        x: 0,
+                        transition: {
+                          duration: 2,
+                        },
+                      }}
+                      viewport={{ once: true }}
+                    >
                       <div class="embed-pattern-wrapper max-width-228">
                         <div aria-hidden="true" class="embed-icon w-embed">
                           <svg
@@ -100,20 +158,49 @@ function HomeGrid() {
                           </svg>
                         </div>
                       </div>
-                    </div>
+                    </motion.div>
                   </div>
                   <div
                     id="w-node-_3cd043f0-6124-e4c9-f9f0-7a9c99b7a1cf-37f129cc"
                     class="patterns-item"
                   >
-                    <div class="patterns-item-wrapper">
-                      <h3 class="heading-24">
+                    <motion.div
+                      class="patterns-item-wrapper"
+                      initial={{
+                        opacity: 0,
+                        y: 150,
+                      }}
+                      whileInView={{
+                        opacity: 1,
+                        y: 0,
+                        transition: {
+                          delay: 2.5,
+                          duration: 2,
+                        },
+                      }}
+                      viewport={{ once: true }}
+                    >
+                      <h3 class="heading-grid">
                         Human - Artifitial Inteligence Relations
                       </h3>
-                    </div>
+                    </motion.div>
                   </div>
-                  <div class="patterns-item hide-mobile" id="patterns-item-last-wave">
-                    <div class="patterns-item-wrapper background-brown">
+                  <div class="patterns-item " id="patterns-item-last-wave">
+                    <motion.div
+                      class="patterns-item-wrapper background-brown"
+                      initial={{
+                        opacity: 0,
+                        x: 100,
+                      }}
+                      whileInView={{
+                        opacity: 1,
+                        x: 0,
+                        transition: {
+                          duration: 2,
+                        },
+                      }}
+                      viewport={{ once: true }}
+                    >
                       <div class="embed-pattern-wrapper max-width-228">
                         <div aria-hidden="true" class="embed-icon w-embed">
                           <svg
@@ -147,7 +234,7 @@ function HomeGrid() {
                           </svg>
                         </div>
                       </div>
-                    </div>
+                    </motion.div>
                   </div>
                 </div>
               </div>

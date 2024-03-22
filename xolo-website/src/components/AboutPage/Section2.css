@@ -8,6 +8,7 @@
     margin: 0 auto;
     height: auto;
     min-height: 100vh;
+    padding-top: 2em;
     padding-bottom: 3em;
 
     min-height: 9vh;
@@ -15,6 +16,7 @@
     position: relative;
     display: flex;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .content-wrapper {

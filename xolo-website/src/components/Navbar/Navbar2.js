@@ -1,7 +1,7 @@
 import React from 'react';
 import {NavLink as Link} from 'react-router-dom';
 import { MdHelp } from 'react-icons/md';
-import "./Navbar.css";
+import "./Navbar2.css";
 
 const Navbar = ({isOpen}) => {
     //console.log(visibility)

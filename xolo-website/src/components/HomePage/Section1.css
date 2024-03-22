@@ -30,6 +30,7 @@
     /* Color, Background & Text */
 
     /* Animations and Other */
+    overflow-y: hidden;
 }
 
 .section1-shortbar {
@@ -47,6 +48,8 @@
     /* Positioning */
     padding-left: 1%;
     padding-right: 1%;
+    margin-block-start: 0;
+    margin-block-end: 0;
 
     /* Display & Box Model | Sizing */
 
@@ -166,7 +169,8 @@
     /* Positioning */
 
     /* Display & Box Model | Sizing */
-    text-align: justify;
+    /* text-align: justify; */
+    width: 100%;
 
     /* Color, Background & Text */
     font-family: serif, Times;

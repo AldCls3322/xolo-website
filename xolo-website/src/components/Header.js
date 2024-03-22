@@ -1,32 +1,34 @@
 import React, {useEffect, useState} from 'react';
 import { NavLink as Link } from "react-router-dom";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { TfiMenu, TfiClose } from "react-icons/tfi";
 import { MdDensityMedium, MdClose } from "react-icons/md";
 import './Header.css';
 import Logo from './imgs/xolowhite.png';
 
-function Header({navToggle, isOpen}) {
+function Header({isOpen}) {
+    const { scrollYProgress } = useScroll();
+    const background = useTransform(
+      scrollYProgress,
+      [0, 0.1],
+      ["var(--color-body80)", "var(--color-body98)"]
+    );
     useEffect(() => {
-        console.log(isOpen)
+      console.log(isOpen);
+      console.log(scrollYProgress);
     }, []);
   return (
-    isOpen ? 
-    <div className='Container' id="header-container">
-        <Link className='logoContainer' to='/'>
-            <img className='xoloLogo' src={Logo} />
-            <h3 className='xoloHeaderTitle'>XOLO</h3>
-        </Link>
-        <MdClose className='iconClose' onClick={navToggle} style={{opacity: !isOpen ? "0" : "1", transition: "all .2s", visibility: !isOpen ? "hidden" : "visible"}}/>
-    </div>
-    :
-    <div className='Container' id="header-container" >
-        <Link className='logoContainer' to='/'>
-            <img className='xoloLogo' src={Logo} />
-            <h3 className='xoloHeaderTitle'>XOLO</h3>
-        </Link>
-        <TfiMenu className='iconMenu' onClick={navToggle}/>
-    </div>
-  )
+    <motion.div
+      className="Container"
+      id="header-container"
+      style={{ background }}
+    >
+      <Link className="logoContainer" to="/">
+        <img className="xoloLogo" src={Logo} />
+        <h3 className="xoloHeaderTitle">XOLO</h3>
+      </Link>
+    </motion.div>
+  );
 }
 
 export default Header

@@ -1,9 +1,13 @@
-import React from 'react'
-import coverImg from '../imgs/black03.jpg'
-import '../HomePage/Section1.css'
-import './Section3.css'
+import React, { useState } from "react";
+import coverImg from '../imgs/black03.jpg';
+import { motion, useScroll, useTransform, useSpring } from "framer-motion";
+import '../HomePage/Section1.css';
+import './Section3.css';
 
 function Section3() {
+
+  const [isInView, setIsInView] = useState(false);
+
   return (
     <div className="Container" id="section3-container">
       <div className="section1-title-container">
@@ -12,12 +16,27 @@ function Section3() {
         <div className="section1-shortbar" />
       </div>
       <div class="overcoming-img-wrapper">
-        <img
+        <motion.img
           src={coverImg}
           loading="lazy"
           sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 94vw, 43vw"
-          alt="a woman is sleeping in a bed with white sheets"
+          alt="img"
           class="section3-centered-img"
+          initial={false}
+          animate={
+            isInView
+              ? {
+                  WebkitMaskImage: `conic-gradient(black 0%, black 100%, transparent 100%, transparent 100%)`,
+                  maskImage: `conic-gradient(black 0%, black 100%, transparent 100%, transparent 100%)`,
+                }
+              : {
+                  WebkitMaskImage: `conic-gradient(black 0%, black 0%, transparent 0%, transparent 100%)`,
+                  maskImage: `conic-gradient(black 0%, black 0%, transparent 0%, transparent 100%)`,
+                }
+          }
+          transition={{ duration: 2, delay: 1.5 }}
+          viewport={{ once: true }}
+          onViewportEnter={() => setIsInView(true)}
         />
       </div>
       <div className="section3-info-container">
@@ -25,7 +44,12 @@ function Section3() {
           className="section1-info-desc-container"
           id="section3-info-desc-centered-container"
         >
-          <h2 className="section1-info-desc-title" id='section3-info-desc-title'>Introducing DORY</h2>
+          <h2
+            className="section1-info-desc-title"
+            id="section3-info-desc-title"
+          >
+            Introducing DORY
+          </h2>
           <div className="section3-info-titlebar" />
           <p className="section1-info-desc-p" id="section3-info-desc-p">
             DORY is a chatting AI. Message her in Whatsapp.

@@ -1,0 +1,29 @@
+.loading-screen-container{
+    position: relative;
+    z-index: 17;
+    display: flex;
+
+    width: 100%;
+    height: 70vh;
+
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 50rem;
+
+    background: transparent;
+}
+
+.dot {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--color-contrast2);
+}
+
+@media screen and (max-width: 700px) {
+    .loading-screen-container {
+        height: 75vh;
+    }
+}

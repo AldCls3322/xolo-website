@@ -43,6 +43,13 @@
   /* Animations and Other */
 }
 
+.block {
+  display: block;
+}
+.inline-block {
+  display: inline-block;
+}
+
 /***---PHONE SCREENS---***/
 @media screen and (max-width: 700px){
   .Container {

@@ -2,10 +2,25 @@ import React from 'react';
 import Img from '../imgs/white02.jpg';
 import "../HomePage/Section1.css";
 import "./Section6.css";
+import { motion } from 'framer-motion';
 
 function Section6() {
   return (
-    <div className="Container" id="section6-container">
+    <motion.div
+      className="Container"
+      id="section6-container"
+      initial={{
+        opacity: 0,
+        y: 300,
+      }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+        transition: {
+          duration: 2.5,
+        },
+      }}
+      viewport={{ once: true }}>
       <div className="section6-info-container">
         <div className="section6-info-desc-container">
           <h2 className="section6-info-desc-title">DORY</h2>
@@ -32,7 +47,7 @@ function Section6() {
           <img className="section6-info-img4" src={Img} />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

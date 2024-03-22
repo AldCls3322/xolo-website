@@ -15,7 +15,9 @@
     line-height: 1.2;
 
     height: auto;
-    padding-top: 1em;
+    padding-top: 8em;
+    padding-bottom: 5em;
+    overflow-y: hidden;
 
     background: transparent;
 }
@@ -69,7 +71,7 @@
     justify-content: center;
 }
 
-.heading-24 {
+.heading-grid {
     text-transform: capitalize;
     font-family: Rubik, sans-serif;
     font-size: 1.5em;
@@ -86,7 +88,15 @@
     margin-right: auto;
 }
 
+.hide-mobile {
+    overflow-x: hidden;
+}
+
 @media screen and (max-width: 700px) {
+    .section-home-patterns {
+        padding-top: 1em;
+        padding-bottom: 5em;
+    }
     .patterns-list {
         grid-row-gap: 2em;
         grid-template-columns: 1fr;
@@ -99,5 +109,6 @@
     }
     #patterns-item-last-wave {
         visibility: hidden;
+        height: 0;
     }
 }

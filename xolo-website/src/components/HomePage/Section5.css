@@ -3,7 +3,7 @@
 
     height: auto;
     padding-top: 5em;
-    padding-bottom: 5em;
+    padding-bottom: 10em;
 
     background: linear-gradient(transparent, var(--color-body));
 }
@@ -166,7 +166,8 @@
 
 @media screen and (max-width: 700px) {
     #sections5-container {
-        padding-top: 1em;
+        padding-top: 2em;
+        padding-bottom: 6em;
     }
     .section5-2div-container {
         max-width: 90%;
