@@ -1,26 +1,31 @@
 :root {
-  --color-body: black;
+  --color-body: #090909;
   --color-text: white;
-  --color-contrastdarker: #370617; /*color5 agua gray light */
-  --color-contrastdark: #66232C; /* color1 */
-  --color-contrast: #CC3D3F; /* color2 contrast color - pink */
-  --color-contrastlight: #E85D04; /* color4 beige aqua light */
-  --color-contrastlighter: #F6A820; /*color6 beige */
-  --color-contrastlightest: #F8F0CB;
+  --color-background: #0f0f0f;
+
+  --color-contrastdarker: #370617; 
+  --color-contrastdark: #8a0900; 
+  --color-contrast: #b93500;
+  --color-contrastlight: #E85D04; 
+  --color-contrastlighter: #FF8114; 
+  --color-contrastlightest: #fcf4d2;
 
   --color-contrast2darker: #023433;
   --color-contrast2dark: #35605D;
-  --color-contrast2: #1A747D; /* color3 beige greenish light  */
-  --color-contrast2light: #74864E;
-  --color-contrast2lighter: #819CA6;
+  --color-contrast2: #1A747D; 
+  --color-contrast2light: #24639C;
+  --color-contrast2lighter: #0096DF;
 
-  --color-contrast3: #E85D04;
+  --color-contrast3dark: #9c0358;
+  --color-contrast3: #E4007C;
+  --color-contrast3light: #ED5966;
 
-  --color-graywhite: #F0F0F0; /*color7 Blanco griseish */
-  --color-graylighter: #BBB4B1; /*color8 Gris claro */
+  --color-graywhite: #F0F0F0; 
+  --color-graylighter: #BBB4B1; 
   --color-graylight: #A0A5A1;
-  --color-graydark: #252726; /*color9 Gris oscuro  */
-  --color-blacker: #202221; /*color10 negroish */
+  --color-graydark: #252726; 
+  --color-blacker: #0f0f0f;
+
   /* Transparent colors */
   --color96: #b9b3acE6; /* beige 90% */
   --color56: #b9b3ac80; /* beige 50% //#898476 */
@@ -30,13 +35,30 @@
   --color110: #07070A; /* negroish */
   --color-body20: #00000014; /* black 20% */
   --color-body30: #0000001E; /* black 30% */
-  --color-body40: #000000E6; /* black 40% */
+  --color-body40: #00000070; /* black 40% */
   --color-body80: #00000080; /* black 80% */
   --color-body98: #000000E6; /* black 98% */
   --color-text10: #FFFFFF0A; /* WHITE 10% */
   --color-text40: #FFFFFF40; /* WHITE 40% */
   --color-text80: #FFFFFF80; /* WHITE 80% */
+  --color-text90: #ffffffcb; /* WHITE 90% */
 
+  /** COLOR TEST 1 **/
+  /* --color-contrastdarker: #370617;
+    --color-contrastdark: #66232C;
+    --color-contrast: #CC3D3F;
+    --color-contrastlight: #E85D04;
+    --color-contrastlighter: #F6A820;
+    --color-contrastlightest: #F8F0CB;
+  
+    --color-contrast2darker: #023433;
+    --color-contrast2dark: #35605D;
+    --color-contrast2: #1A747D;
+    --color-contrast2light: #74864E;
+    --color-contrast2lighter: #819CA6;
+  
+    --color-contrast3: #E85D04; */
+  
   /* --color-contrastdarker: #370617; 
   --color-contrastdark: #6A040F; 
   --color-contrast: #DC2F02; 
@@ -64,4 +86,11 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/***---PHONE SCREENS---***/
+@media screen and (max-width: 700px) {
+  body{
+    font-size: 1.1rem;
+  }
 }

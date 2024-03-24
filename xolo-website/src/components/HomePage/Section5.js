@@ -1,10 +1,23 @@
 import React from "react";
 import "./Section5.css";
+import { motion } from "framer-motion";
 
 function Section5() {
   return (
     <div className="Container" id="sections5-container">
-      <div className="section5-2div-container">
+      <motion.div className="section5-2div-container"
+          initial={{
+            opacity: 0,
+            x: -30,
+          }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+            transition: {
+              duration: 2,
+            },
+          }}
+          viewport={{ once: true }}>
         <div className="section5-div-container" id="section5-left-div">
           <div className="section5-text-info-container">
             <div className="section5-text-info-header">KEY ASPECTS</div>
@@ -87,7 +100,7 @@ function Section5() {
         <div className="section5-div-container" id="section5-right-div">
           insert IMG
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

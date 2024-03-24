@@ -1,5 +1,6 @@
 #HomeContainer {
     /* Positioning */
+    position: relative;
     /* z-index: 8; 10 default*/
 
     /* Display & Box Model | Sizing */
@@ -20,6 +21,7 @@
     height: 100vh;
     width: 100%;
     top: 0;
+    transform:translateY(-10vh);
     z-index: 6;
     background: linear-gradient(var(--color-contrastdarker), var(--color-body));
 }
@@ -33,6 +35,7 @@
     width: 100%;
     height: 100vh;
     top: 0;
+    transform: translateY(-10vh);
     z-index: 7;
     backdrop-filter: blur(50px);
 }
@@ -96,6 +99,14 @@
 
     /* Animations and Other */
 }
+
+.home-title-animated-text{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    line-height: 1;
+    font-size: clamp(1.5em, 2.5vw, 2.5em);
+}
+
 .TextContainer h1{
     margin-block-start: 0;
     margin-block-end: 0;
@@ -124,7 +135,7 @@
 
 .button-64 {
     align-items: center;
-    background-image: linear-gradient(144deg, var(--color-contrast), var(--color-contrastdarker) 50%, var(--color-contrastlighter));
+    background-image: linear-gradient(144deg, var(--color-contrast3), var(--color-contrastdarker) 50%, var(--color-contrast2));
     border: 0;
     border-radius: 8px;
     box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;

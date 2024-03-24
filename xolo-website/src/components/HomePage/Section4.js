@@ -1,12 +1,29 @@
-import React from 'react';
+import React, { useState } from "react";
 import './Section4.css';
 import Img from "../imgs/white02.jpg";
+import { delay, motion } from "framer-motion";
 
 function Section4() {
+  const [isInView, setIsInView] = useState(false);
+
   return (
     <section class="Container" id="section4-container">
       <div class="page-padding">
-        <div className="section4-wrapper">
+        <motion.div
+          className="section4-wrapper"
+          initial={{
+            opacity: 0,
+            x: 40,
+          }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+            transition: {
+              duration: 3,
+            },
+          }}
+          viewport={{ once: true }}
+        >
           <div class="container-1280">
             <div class="expect-wrapper">
               <div class="expect-text-wrapper">
@@ -24,11 +41,27 @@ function Section4() {
                   </p>
                 </div>
                 <div class="expect-img-wrapper">
-                  <img
+                  <motion.img
                     src={Img}
-                    loading="lazy"
                     alt="dory chat"
                     class="img-full-width img-radius-64"
+                    initial={false}
+                    animate={
+                      isInView
+                        ? {
+                            WebkitMaskImage: "repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 0px, rgba(0,0,0,1) 0px, rgba(0,0,0,1) 30px)",
+                            maskImage: "repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 0px, rgba(0,0,0,1) 0px, rgba(0,0,0,1) 30px)",
+                          }
+                        : {
+                            WebkitMaskImage:
+                              "repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 30px, rgba(0,0,0,1) 30px, rgba(0,0,0,1) 30px)",
+                            maskImage:
+                              "repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 30px, rgba(0,0,0,1) 30px, rgba(0,0,0,1) 30px)",
+                          }
+                    }
+                    transition={{ duration: 1, delay: 2 }}
+                    viewport={{ once: true }}
+                    onViewportEnter={() => setIsInView(true)}
                   />
                 </div>
               </div>
@@ -169,7 +202,7 @@ function Section4() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

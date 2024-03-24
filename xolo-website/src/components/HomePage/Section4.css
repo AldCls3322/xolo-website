@@ -4,9 +4,10 @@
     box-sizing: border-box;
     height: auto;
     padding-top: 10%;
-    padding-bottom: 2em;
+    padding-bottom: 3em;
     background: linear-gradient(var(--color-body), transparent);
     /* background: var(--color-text); */
+    overflow-x: hidden;
 }
 
 .page-padding {
@@ -22,7 +23,7 @@
     padding-bottom: 2em;
     border-radius: 30px;
     background: var(--color-body);
-    box-shadow: var(--color-body80) 0px 54px 55px, var(--color-body40) 0px -12px 30px, var(--color-body40) 0px 4px 6px, var(--color-body30) 0px 12px 13px, var(--color-body20) 0px -3px 5px;
+    box-shadow: var(--color-body80) 0px 34px 25px, var(--color-body40) 0px -12px 30px, var(--color-body40) 0px 4px 6px, var(--color-body30) 0px 12px 13px, var(--color-body20) 0px -3px 5px;
 }
 
 .container-1280 {
@@ -101,21 +102,23 @@
 }
 
 .expect-card-item-wrapper {
-    background-color: var(--color-contrastdark);
+    background-color: var(--color-contrast2);
     border-radius: 32px;
     padding: 2rem 2.5rem;
 }
 #expect-card-item-wrapper-card2 {
-    background-color: var(--color-contrast2dark);
+    background-color: var(--color-contrast3dark);
 }
 #expect-card-item-wrapper-card3 {
-    background-color: var(--color-contrast2darker);
+    background-color: var(--color-contrast);
 }
 
 .expected-card-item-header {
     display: flex;
     width: 100%;
     margin-bottom: 1rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .expect-card-icon {
@@ -163,8 +166,8 @@
 .heading-24 {
     text-transform: capitalize;
     font-family: Rubik, sans-serif;
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.6rem;
+    font-weight: 800;
     line-height: 1.2;
 }
 
@@ -190,12 +193,13 @@
 @media screen and (max-width: 700px) {
     #section4-container {
         width: 100%;
+        padding-bottom: 2em;
     }
     .page-padding {
         max-height: 100%;
         padding-left: 0;
         padding-right: 0;
-        margin-top: 10em;
+        margin-top: 5em;
     }
     .expect-wrapper {
         display: flex;
@@ -217,6 +221,12 @@
         width: 100%;
         height: 100%;
         margin-bottom: 0;
+    }
+    .expect-card-icon {
+        min-width: 48px;
+    }
+    .heading-24{
+        font-size: 1.2rem;
     }
     .text-size-25 {
         visibility: hidden;

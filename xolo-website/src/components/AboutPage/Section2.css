@@ -8,6 +8,7 @@
     margin: 0 auto;
     height: auto;
     min-height: 100vh;
+    padding-top: 2em;
     padding-bottom: 3em;
 
     min-height: 9vh;
@@ -15,6 +16,7 @@
     position: relative;
     display: flex;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .content-wrapper {
@@ -232,6 +234,7 @@
     transform: translate(0%, 0%);
     transition-property: transform, opacity, clip-path;
     color: var(--color-text);
+    font-size: 3rem;
     /* line-height: calc(1.4em*(1 +(1 - 2.2) / 25)); */
 }
 
@@ -438,6 +441,13 @@
 
     .fe-block-0a320a8c76a6cf3df489 .sqs-block-alignment-wrapper {
         align-items: flex-start;
+    }
+}
+
+/***---PHONE SCREENS---***/
+@media screen and (max-width: 700px) {
+    .fe-646440fac3d10800e3844be3 {
+        grid-template-rows: repeat(25, minmax(24px, auto));
     }
 }
 

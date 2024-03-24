@@ -2,13 +2,47 @@ import React from 'react';
 import Img from '../imgs/white01.jpg';
 import "../HomePage/Section1.css";
 import "./Section8.css";
+import { motion } from "framer-motion";
+import { AnimatedText } from '../AnimatedText.tsx';
 
 function Section8() {
   return (
-    <div className="Container" id="section8-container">
+    <motion.div
+      className="Container"
+      id="section8-container"
+      initial={{
+        opacity: 0,
+        y: 300,
+      }}
+      whileInView={{
+        opacity: 1,
+        y: 0,
+        transition: {
+          duration: 2.5,
+        },
+      }}
+      viewport={{ once: true }}
+    >
       <div className="section1-title-container">
         <div className="section1-shortbar" />
-        <h2 className="section1-title-text">WHO ARE WE?</h2>
+        <motion.h2
+          className="section1-title-text"
+          initial={{
+            opacity: 0,
+            y: 50,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: {
+              delay: 2.5,
+              duration: 1,
+            },
+          }}
+          viewport={{ once: true }}
+        >
+          WHO ARE WE?
+        </motion.h2>
         <div className="section1-shortbar" />
       </div>
       <div className="section1-info-container">
@@ -23,16 +57,16 @@ function Section8() {
                   height="46vmin"
                   fill="#FFF"
                 />
-                <text x="8vmin" text-anchor="middle" y="48vmin" dy="0">
+                <text x="8vmin" text-anchor="middle" y="48.1vmin" dy="0">
                   X
                 </text>
-                <text x="20vmin" text-anchor="middle" y="48vmin" dy="0">
+                <text x="20vmin" text-anchor="middle" y="48.1vmin" dy="0">
                   O
                 </text>
-                <text x="31vmin" text-anchor="middle" y="48vmin" dy="0">
+                <text x="31vmin" text-anchor="middle" y="48.1vmin" dy="0">
                   L
                 </text>
-                <text x="42vmin" text-anchor="middle" y="48vmin" dy="0">
+                <text x="42vmin" text-anchor="middle" y="48.1vmin" dy="0">
                   O
                 </text>
               </mask>
@@ -65,10 +99,10 @@ function Section8() {
             <br />
             <br />
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
+          </p> */}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

@@ -11,7 +11,7 @@
 
     /* Color, Background & Text */
     border-radius: 0 0 50px 50px;
-    box-shadow: var(--color-body80) 0px 54px 55px, var(--color-body40) 0px -12px 30px, var(--color-body40) 0px 4px 6px, var(--color-body30) 0px 12px 13px, var(--color-body20) 0px -3px 5px;
+    box-shadow: var(--color-body80) 0px 54px 55px, var(--color-body40) 0px 0px 0px, var(--color-body40) 0px 4px 6px, var(--color-body30) 0px 12px 13px, var(--color-body20) 0px -3px 5px;
     background: var(--color-body);
 }
 
@@ -70,8 +70,8 @@
     /* Color, Background & Text */
     font-family: serif, Times;
     font-size: 1.5rem;
-    color: var(--color-text80);
-    margin: 0;
+    color: var(--color-text90);
+    /* margin: 0; */
 
     /* Animations and Other */
 }
@@ -118,4 +118,31 @@
     transform: translate(-32px, 5px);
     transition: transform 300ms ease;
     transform-origin: top;
+}
+
+/***---PHONE SCREENS---***/
+@media screen and (max-width: 700px) {
+    .section6-info-container {
+        flex-direction: column;
+        width: 90%;
+        padding-bottom: 2rem;
+    }
+    .section6-info-desc-container {
+        width: 90%;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .section6-info-desc-title {
+        font-size: 2rem;
+    }
+    .section6-info-desc-p {
+        text-align: center;
+        overflow-y: hidden;
+        font-size: 1.1rem;
+    }
+    .section6-info-img-container {
+        width: 100%;
+        margin-left: 6%;
+    }
 }

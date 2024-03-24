@@ -61,7 +61,7 @@
     z-index: 11;
     min-width: 190px;
     min-height: 70px;
-    /* border: 1px solid var(--color-contrastlightest); */
+    max-width: 75%;
     background: var(--color-body);
     border-radius: 0px 15px 15px 10px;
     margin-right: auto;
@@ -76,7 +76,7 @@
     font-size: 1.5rem;
     text-align: left;
 
-    box-shadow: 0 0 15px 1px var(--color-contrast);
+    box-shadow: 0 0 20px 2px var(--color-contrast);
     text-shadow: 0 0 5px var(--color-contrastlightest);
 }
 .received-message:before {
@@ -89,16 +89,13 @@
     width: 40px;
     border-bottom-left-radius: 50%;
     background: transparent;
-}
-
-.received-message:before {
-    z-index: 8;
     box-shadow: 0 20px 0 0 var(--color-body);
 }
 .received-message-p {
+    position: relative;
     z-index: 11;
     margin: 0;
-    background-color: var(--color-body);
+    background-color: transparent;
 }
 
 
@@ -131,8 +128,9 @@
 .sent-message {
     position: relative;
     min-width: 190px;
+    max-width: 80%;
     min-height: 70px;
-    background: var(--color-body);
+    background: var(--color-contrast2darker);
     border-radius: 15px 0px 15px 10px;
     margin-left: auto;
 
@@ -146,7 +144,7 @@
     font-size: 1.5rem;
     text-align: end;
 
-    box-shadow: 0 0 20px 2px var(--color-contrast);
+    box-shadow: 0 0 20px 2px var(--color-contrast2);
     text-shadow: 0 0 5px var(--color-contrastlightest);
 }
 
@@ -162,7 +160,14 @@
 }
 
 .sent-message:before {
-    box-shadow: 0 20px 0 0 var(--color-body);
+    box-shadow: 0 20px 0 0 var(--color-contrast2darker);
+}
+
+.sent-message-p{
+    position: relative;
+    z-index: 11;
+    margin: 0;
+    background-color: transparent;
 }
 
 .messages-section-button-container {
@@ -189,14 +194,14 @@
     color: var(--color-text);
 
     background-color: var(--color-body);
-    border: 1px solid var(--color-contrast);
-    box-shadow: inset 0 0 10px 1px var(--color-contrast);
+    border: 1px solid var(--color-contrast2);
+    box-shadow: inset 0 0 10px 1px var(--color-contrast2);
     transition: all 0.4s;
 }
 .messages-section-button1-textenter:hover {
     transition: all 0.4s;
-    box-shadow: inset 0 0 20px 1px var(--color-contrast);
-    text-shadow: 0 0 5px var(--color-contrastlightest);
+    box-shadow: inset 0 0 20px 1px var(--color-contrast2);
+    text-shadow: 0 0 5px var(--color-text);
 }
 
 .messages-section-button2-textenter {
@@ -208,13 +213,15 @@
     border-radius: 50%;
     text-decoration: none;
 
-    background-color: var(--color-contrast);
-    box-shadow: 0 0 20px 2px var(--color-contrast);
+    background-color: var(--color-contrast2dark);
+    box-shadow: 0 0 20px 2px var(--color-contrast2);
+    color: var(--color-text80);
     transition: all 0.4s;
 }
 .messages-section-button2-textenter:hover {
     transition: all 0.4s;
-    box-shadow: 0 0 50px 2px var(--color-contrast);
+    box-shadow: 0 0 50px 2px var(--color-contrast2);
+    color: var(--color-text);
 }
 
 .messages-section-button2-icon {
@@ -225,14 +232,66 @@
 }
 
 @media screen and (max-width: 700px) {
+    .xolo-message-icon{
+        width: 40px;
+        height: 40px;
+    }
+    .xoloLogo-message {
+        width: 40px;
+        height: 40px;
+    }
+    .user-message-icon {
+        width: 40px;
+        height: 40px;
+    }
+    .userLogo-message {
+        width: 27px;
+        height: 27px;
+    }  
     #messages-section-container {
-        font-size: 1.2rem;
+        gap: 30px;
     }
     .received-message {
         font-size: 1rem;
+        min-width: 100px;
+        max-width: 60%;
+        min-height: 40px;
+
+        padding-top: 5px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 5px;
+
+    }
+    #xolo-received-message-hey{
+        padding-left: 5px;
+        padding-top: 0;
+        padding-bottom: 5px;
     }
     .sent-message {
         font-size: 1rem;
+        min-width: 100px;
+        max-width: 60%;
+        min-height: 40px;
+
+        padding-top: 5px;
+        padding-bottom: 10px;
+        padding-left: 5px;
+        padding-right: 10px;;
+    }
+    #user-sent-message-hey {
+        padding-right: 5px;
+        padding-top: 0;
+        padding-bottom: 5px;
+    }
+    .messages-section-button1-textenter {
+        padding-left: 20px;
+        margin-right: 5%;
+        height: 100%;
+        padding-top: auto;
+        padding-bottom: auto;
+        font-size: 1.4rem;
+        font-weight: 600;
     }
 }
 
