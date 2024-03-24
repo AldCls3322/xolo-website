@@ -22,7 +22,7 @@ const HomeTitle = () => {
                 role="button"
                 to="https://buy.stripe.com/4gw2aR7hfaTugCc6oo"
               >
-                <span class="text">Get Yours Now</span>
+                <span class="text">Get Started!</span>
               </Link>
             </div>
           </div>

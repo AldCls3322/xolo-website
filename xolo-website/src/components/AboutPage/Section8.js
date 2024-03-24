@@ -51,7 +51,8 @@ function Section8() {
         <div className="section8-info-desc-container">
           <h2 className="section1-info-desc-title">XOLO</h2>
           <p className="section1-info-desc-p">
-            XOLO is the brand.
+            We are Xolo, a tech company based in Mexico looking for 
+            the Opportunity to connect, grow and develop alongside technology. 
             <br />
             <br />
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed

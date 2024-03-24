@@ -15,11 +15,11 @@ function MessagesSection() {
         <div className="xolo-message-icon">
           <img className="xoloLogo-message" src={Logo} />
         </div>
-        <div className="received-message">Hey!!</div>
+        <div className="received-message">Hello! Welcome to Xolo!</div>
       </div>
 
       <div className="user-message-container">
-        <div className="sent-message">Hey...</div>
+        <div className="sent-message">Hello!</div>
         <div className="user-message-icon">
           <FaUser className="userLogo-message" />
         </div>
@@ -31,14 +31,13 @@ function MessagesSection() {
         </div>
         <div className="received-message">
           <p className="received-message-p">
-            Welcome to our webpage! I'm Xolo, and I'm here to show you what is
-            Dory!! (:
+            I will be showing you around and introduce you to Dory!
           </p>
         </div>
       </div>
 
       <div className="user-message-container">
-        <div className="sent-message">Sure thing, please tell me.</div>
+        <div className="sent-message">Sure thing, please tell me!</div>
         <div className="user-message-icon">
           <FaUser className="userLogo-message" />
         </div>
@@ -51,31 +50,31 @@ function MessagesSection() {
         <div className="received-message-wrapper">
           <div className="received-message">
             <p className="received-message-p">
-              Xolo was born inevitably, it is a meeting point between technology
+              Xolo was born out of inevitablility, it is a meeting point between technology
               and the tools <br />
-              we use with our humanity.
+              we use as humans.
             </p>
           </div>
           <div className="received-message">
             <p className="received-message-p">
-              I'm focused on bringing you the latest tec in a the most natural
+              We are focused on developing the most innovative technology in the most natural
               and simple <br />
-              way I can. Hence, Dory was created!
+              way. Hence, Dory was created!
             </p>
           </div>
           <div className="received-message">
             <p className="received-message-p">
-              Now with Dory... She can be that companion everyone needs. She has
+              Dory can be that companion everyone needs. It has
               the <br />
               cappacity to learn from you, and most surely you will learn from
-              her.
+              it.
             </p>
           </div>
         </div>
       </div>
 
       <div className="user-message-container">
-        <div className="sent-message">But... what exactly is Dory?</div>
+        <div className="sent-message">WOW! But... what exactly is Dory?</div>
         <div className="user-message-icon">
           <FaUser className="userLogo-message" />
         </div>
@@ -88,9 +87,10 @@ function MessagesSection() {
         <div className="received-message-wrapper">
           <div className="received-message">
             <p className="received-message-p">
-              Dory is an AI cappable to have a full conversation with you. You
+              Dory is a, AI Companion developed arround different technologies,<br />
+              cappable of having full fledge conversations. You
               will be able to <br />
-              ask her any question, and chat with her about any topic!!
+              ask her any question, and chat with her about any topic!
             </p>
           </div>
           {/* <div className="received-message">
@@ -102,8 +102,8 @@ function MessagesSection() {
           </div> */}
           <div className="received-message">
             <p className="received-message-p">
-              Of course, there will be a lot more things we will need to teach
-              her, so you
+              Of course, there will be lots more things we have to teach
+              it, so you
               <br />
               might need to be patient with her before sending memes to her.
               <span>
@@ -118,7 +118,7 @@ function MessagesSection() {
       <div className="user-message-container">
         <div className="sent-message">
           <p className="received-message-p">
-            Sounds interesting, how do I try her?
+            Sounds very cool! How can I be a part of it?
           </p>
         </div>
         <div className="user-message-icon">
@@ -132,9 +132,9 @@ function MessagesSection() {
         </div>
         <div className="received-message">
           <p className="received-message-p">
-            You'll need to pay the subscription by clicking below. Make sure to
+            You'll need to subscribe by clicking below. Make sure to
             browse our <br />
-            website for any other question, or feel free to contact us (:
+            website for any other question, or feel free to contact us!
           </p>
         </div>
       </div>
@@ -144,7 +144,7 @@ function MessagesSection() {
           className="messages-section-button1-textenter"
           to="https://buy.stripe.com/4gw2aR7hfaTugCc6oo"
         >
-          Subsribe by clicking here
+          Start your subscription!
         </Link>
         <Link
           className="messages-section-button2-textenter"

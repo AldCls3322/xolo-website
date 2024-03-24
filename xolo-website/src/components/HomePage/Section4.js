@@ -15,12 +15,11 @@ function Section4() {
                 </div>
                 <div class="expect-subheading-wrapper">
                   <p class="text-size-20">
-                    Dory is an AI that can chat with people through Whatsapp. As
-                    you start chatting with Dory, first you'll need to configure
-                    her: setting Dory a name and gender. <br />
+                    Dory is an AI Companion that you can chat with, through Whatsapp. As
+                    you start chatting with Dory, you will receive your own chatting experience. <br />
                     <br />
-                    Dory will text you back once you start talking with her. She
-                    will answer your questions, give you advices, and tell you
+                    Dory will text you back once you start the conversation. Generating a realistic
+                    answer to your questions, give you advices, and tell you
                     jokes!
                   </p>
                 </div>
@@ -158,13 +157,12 @@ function Section4() {
                       </div>
                       <div class="expect-card-title">
                         <h4 class="heading-24 mobile-text-20">
-                          Learns according to the user
+                          Learns alongside the user
                         </h4>
                       </div>
                     </div>
                     <p class="text-size-25">
-                      Dory has memory and she will change as you talk to her for
-                      better suitability.
+                      Dory will learn as you converse with it, developing an ever more complex personality.
                     </p>
                   </div>
                 </div>

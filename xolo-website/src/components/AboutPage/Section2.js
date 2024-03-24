@@ -161,22 +161,14 @@ function Section2() {
                     id="block-yui_3_17_2_1_1684341679213_11245"
                   >
                     <p class="preFlex flexIn">
-                      We want to make human and AI <strong>firendships</strong>{" "}
+                      We envision a world where technology serves as an extension of the self. We want to make the human and AI <strong>relationship</strong>{" "}
                       possible.
                       <br />
-                      <strong>Dory</strong> and each person can create a
-                      conection, as we do when we name objects. However this is
-                      real.
                     </p>
                     <p class="preFlex flexIn">
-                      <strong>Lorem ipsum</strong>
-                      <br />
-                      <strong>
-                        dolor sit amet, consectetur adipiscing elit.
-                      </strong>{" "}
-                      Sed quis turpis facilisis, consectetur turpis id, pharetra
-                      mi. Sed bibendum finibus dui eget sodales. Nam ultricies
-                      blandit leo vel posuere.
+                      <strong>Dory</strong> is our first step towards reaching this goal.
+                      As more people connect and gain the freedom to express and develop themeselfs,
+                      our interactions will become more humane.
                     </p>
                   </div>
                 </div>
