@@ -9,7 +9,7 @@
     height: 100vh;
 
     /* Color, Background & Text */
-    background: var(--color-body);
+    background: var(--color-background);
 
     /* Animations and Other */
 }
@@ -32,11 +32,11 @@
 
 
 #blob1-gradient1 {
-    stop-color: var(--color-contrast);
+    stop-color: var(--color-contrast3);
 }
 
 #blob1-gradient2 {
-    stop-color: var(--color-contrastdarker);
+    stop-color: var(--color-contrast);
 }
 
 #blob2-gradient1 {
@@ -48,11 +48,11 @@
 }
 
 #blob3-gradient1 {
-    stop-color: var(--color-contrast);
+    stop-color: var(--color-contrast3);
 }
 
 #blob3-gradient2 {
-    stop-color: var(--color-contrast2);
+    stop-color: var(--color-contrast2light);
 }
 
 #blob4-svg {
@@ -60,11 +60,11 @@
 }
 
 #blob4-gradient1 {
-    stop-color: var(--color-contrast);
+    stop-color: var(--color-contrastlighter);
 }
 
 #blob4-gradient2 {
-    stop-color: var(--color-body);
+    stop-color: var(--color-contrastdark);
 }
 
 #blob5-gradient1 {
@@ -72,7 +72,7 @@
 }
 
 #blob5-gradient2 {
-    stop-color: var(--color-contrast2);
+    stop-color: var(--color-contrastdark);
 }
 
 #blob6-svg {
@@ -84,19 +84,19 @@
 }
 
 #blob6-gradient2 {
-    stop-color: var(--color-contrast2lighter);
+    stop-color: var(--color-contrast3);
 }
 
 #blob7-gradient1 {
-    stop-color: var(--color-contrast2darker);
+    stop-color: var(--color-contrastlighter);
 }
 
 #blob7-gradient2 {
-    stop-color: var(--color-contrastdarker);
+    stop-color: var(--color-contrastlight);
 }
 
 #blob8-gradient1 {
-    stop-color: var(--color-contrastlightest);
+    stop-color: var(--color-contrast3);
 }
 
 #blob8-gradient2 {

@@ -3,6 +3,7 @@ import Img from '../imgs/white01.jpg';
 import "../HomePage/Section1.css";
 import "./Section8.css";
 import { motion } from "framer-motion";
+import { AnimatedText } from '../AnimatedText.tsx';
 
 function Section8() {
   return (
@@ -24,7 +25,24 @@ function Section8() {
     >
       <div className="section1-title-container">
         <div className="section1-shortbar" />
-        <h2 className="section1-title-text">WHO ARE WE?</h2>
+        <motion.h2
+          className="section1-title-text"
+          initial={{
+            opacity: 0,
+            y: 50,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: {
+              delay: 2.5,
+              duration: 1,
+            },
+          }}
+          viewport={{ once: true }}
+        >
+          WHO ARE WE?
+        </motion.h2>
         <div className="section1-shortbar" />
       </div>
       <div className="section1-info-container">
@@ -65,8 +83,28 @@ function Section8() {
           </svg>
         </div>
         <div className="section8-info-desc-container">
-          <h2 className="section1-info-desc-title">XOLO</h2>
-          <p className="section1-info-desc-p">
+          <AnimatedText
+            className="section1-info-desc-title"
+            once
+            text="XOLO"
+            el="h2"
+            settingDelay={3}
+          />
+          <AnimatedText
+            className="section1-info-desc-p"
+            once
+            text="XOLO is the brand."
+            el="p"
+            settingDelay={4}
+          />
+          <AnimatedText
+            className="section1-info-desc-p"
+            once
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis eros eu dui faucibus faucibus sed sit amet sapien."
+            el="p"
+            settingDelay={6}
+          />
+          {/* <p className="section1-info-desc-p">
             XOLO is the brand.
             <br />
             <br />
@@ -80,7 +118,7 @@ function Section8() {
             <br />
             <br />
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
+          </p> */}
         </div>
       </div>
     </motion.div>

@@ -73,8 +73,8 @@ const HomeTitle = () => {
           >
             <defs>
               <linearGradient id="MyGradient">
-                <stop offset="5%" stop-color="#F48C06" />
-                <stop offset="95%" stop-color="#F8F0CB" />
+                <stop offset="30%" stop-color="#023433" />
+                <stop offset="100%" stop-color="#aa2800" />
               </linearGradient>
             </defs>
             <path

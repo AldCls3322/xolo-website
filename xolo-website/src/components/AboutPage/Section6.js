@@ -3,6 +3,7 @@ import Img from '../imgs/white02.jpg';
 import "../HomePage/Section1.css";
 import "./Section6.css";
 import { motion } from 'framer-motion';
+import { AnimatedText } from "../AnimatedText.tsx";
 
 function Section6() {
   return (
@@ -20,11 +21,32 @@ function Section6() {
           duration: 2.5,
         },
       }}
-      viewport={{ once: true }}>
+      viewport={{ once: true }}
+    >
       <div className="section6-info-container">
         <div className="section6-info-desc-container">
-          <h2 className="section6-info-desc-title">DORY</h2>
-          <p className="section6-info-desc-p">
+          <AnimatedText
+            className="section6-info-desc-title"
+            once
+            text="DORY"
+            el="h2"
+            settingDelay={3}
+          />
+          <AnimatedText
+            className="section6-info-desc-p"
+            once
+            text="Dory is the product."
+            el="p"
+            settingDelay={4}
+          />
+          <AnimatedText
+            className="section6-info-desc-p"
+            once
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis eros eu dui faucibus faucibus sed sit amet sapien."
+            el="p"
+            settingDelay={6}
+          />
+          {/* <p className="">
             Dory is the product.
             <br />
             <br />
@@ -38,7 +60,7 @@ function Section6() {
             <br />
             <br />
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
+          </p> */}
         </div>
         <div className="section6-info-img-container">
           <img className="section6-info-img1" src={Img} />

@@ -102,15 +102,15 @@
 }
 
 .expect-card-item-wrapper {
-    background-color: var(--color-contrastdark);
+    background-color: var(--color-contrast2);
     border-radius: 32px;
     padding: 2rem 2.5rem;
 }
 #expect-card-item-wrapper-card2 {
-    background-color: var(--color-contrast2dark);
+    background-color: var(--color-contrast3dark);
 }
 #expect-card-item-wrapper-card3 {
-    background-color: var(--color-contrast2darker);
+    background-color: var(--color-contrast);
 }
 
 .expected-card-item-header {

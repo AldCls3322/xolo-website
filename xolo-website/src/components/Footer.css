@@ -38,9 +38,14 @@
     justify-content: center;
     border-radius: 50%;
     color: var(--color-body);
+    
+    transition: all 0.5s;
 }
 .footer-socialmedia-icon {
     width: 0.8em;
+}
+.footer-socialmedia-icon-wrapper:hover {
+    background: var(--color-contrast3);
 }
 
 .footer-links-desc-wrapper {
@@ -57,6 +62,11 @@
     text-decoration: none;
     color: var(--color-text);
     font-size: 1.2rem;
+    transition: all 0.5s;
+}
+
+.footer-link:hover {
+    color: var(--color-contrast3);
 }
 
 .footer-info-container {

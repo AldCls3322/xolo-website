@@ -11,6 +11,7 @@ type AnimatedTextProps = {
     hidden: Variant;
     visible: Variant;
   };
+  settingDelay: number;
 };
 
 const defaultAnimations = {
@@ -34,6 +35,7 @@ export const AnimatedText = ({
   once,
   repeatDelay,
   animation = defaultAnimations,
+  settingDelay,
 }: AnimatedTextProps) => {
   const controls = useAnimation();
   const textArray = Array.isArray(text) ? text : [text];
@@ -68,7 +70,7 @@ export const AnimatedText = ({
         initial="hidden"
         animate={controls}
         variants={{
-          visible: { transition: { staggerChildren: 0.05 } },
+          visible: { transition: { delay:settingDelay, staggerChildren: 0.05, delayChildren: settingDelay } },
           hidden: {},
         }}
         aria-hidden="true"

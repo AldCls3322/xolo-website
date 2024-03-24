@@ -13,13 +13,13 @@ function Section4() {
           className="section4-wrapper"
           initial={{
             opacity: 0,
-            x: 30,
+            x: 40,
           }}
           whileInView={{
             opacity: 1,
             x: 0,
             transition: {
-              duration: 2,
+              duration: 3,
             },
           }}
           viewport={{ once: true }}

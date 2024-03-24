@@ -46,21 +46,8 @@ function Background() {
         id="arc-svg"
       >
         <path
-          d="M34.5499 158.023C0.467756 123.941 0.467756 68.1256 34.5499 34.0435C68.632 -0.0385913 124.448 -0.0385913 158.53 34.0435"
-          stroke="currentColor"
-          stroke-width="16.1298"
-          stroke-miterlimit="10"
-        />
-        <path
-          d="M34.5499 158.023C0.467756 123.941 0.467756 68.1256 34.5499 34.0435C68.632 -0.0385913 124.448 -0.0385913 158.53 34.0435"
-          stroke="currentColor"
-          stroke-opacity="0.2"
-          stroke-width="16.1298"
-          stroke-miterlimit="10"
-        />
-        <path
           d="M33.5616 156.542C-0.520525 122.459 -0.520525 66.6437 33.5616 32.5616C67.6437 -1.52053 123.459 -1.52053 157.541 32.5616"
-          stroke="var(--color-contrast)"
+          stroke="var(--color-contrast3)"
           stroke-width="5.37659"
           stroke-miterlimit="10"
           stroke-linecap="round"

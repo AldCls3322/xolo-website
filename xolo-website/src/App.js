@@ -15,6 +15,7 @@ import Footer from './components/Footer';
 // import Test from "./components/HomePage/Test";
 import Background from './components/Background';
 import LoadingScreen from './components/LoadingScreen';
+import NoiseOverlay from './components/NoiseOverlay';
 
 const HomeTitle = lazy(() => import('./components/HomePage/HomeTitle'))
 const MessagesSection = lazy(() => import("./components/HomePage/MessagesSection"))
@@ -95,7 +96,7 @@ function useMenuAnimation(isOpen) {
     //   setIsopen(false)
     // }
 
-    //NavBar1
+    //NavBar
     const [isOpen, setIsOpen] = useState(false);
 
     const scope = useMenuAnimation(isOpen);
@@ -105,6 +106,7 @@ function useMenuAnimation(isOpen) {
   return (
     <Router>
       <div className="App" ref={scope}>
+        <NoiseOverlay />
         <Header isOpen={isOpen} />
         <Menu toggle={() => setIsOpen(!isOpen)} backToTop={backToTop} />
         <MenuToggle toggle={() => setIsOpen(!isOpen)} />
@@ -116,7 +118,7 @@ function useMenuAnimation(isOpen) {
             element={[
               <Suspense fallback={<LoadingScreen />}>
                 <ContactSection />
-              </Suspense>
+              </Suspense>,
             ]}
           />
           <Route
@@ -128,11 +130,11 @@ function useMenuAnimation(isOpen) {
                 <Section8 />
                 <Section6 />
                 <Section2 />
-                <Section7 />
-              </Suspense>
+                {/* <Section7 /> */}
+              </Suspense>,
             ]}
           />
-          <Route path="/how-to-use" element={[]} />
+          <Route path="/how-to-use" element={[<LoadingScreen />]} />
           <Route
             path="/"
             element={[
@@ -143,7 +145,7 @@ function useMenuAnimation(isOpen) {
                 <HomeGrid />
                 <Section5 />
                 <Section1 />
-              </Suspense>
+              </Suspense>,
             ]}
           />
         </Routes>

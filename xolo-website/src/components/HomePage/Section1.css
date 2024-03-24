@@ -91,7 +91,7 @@
 
     /* Display & Box Model | Sizing */
     display: grid;
-    box-shadow: 0 3px 6px var(--color-contrast2lighter);
+    box-shadow: 0 3px 6px var(--color-contrast3light);
     grid-template-columns: max-content auto;
     grid-template-rows: auto max-content;
     
@@ -175,7 +175,7 @@
     /* Color, Background & Text */
     font-family: serif, Times;
     font-size: 1.5rem;
-    color: var(--color-text80);
+    color: var(--color-text90);
 
     /* Animations and Other */
 }
@@ -208,13 +208,14 @@
     border-radius: 10px;
 
     /* Color, Background & Text */
-    background: var(--color-contrastlight);
+    background: var(--color-contrast);
     color: var(--color-body);
     font-size: 1.4rem;
     font-family: monospace;
     text-decoration: none;
 
     /* Animations and Other */
+    filter: drop-shadow(0 0 0.3rem var(--color-contrastlight));
     transition: 0.2s ease-out;
 }
 
@@ -222,7 +223,7 @@
     background: var(--color-body);
     transition: 0.2s ease-out;
     cursor: pointer;
-    color: var(--color-cotrastdarker);
+    color: var(--color-contrastlight);
     transition: 0.2s ease-in-out;
     filter: drop-shadow(0 0 1rem var(--color-contrastlight));
 }
@@ -277,8 +278,8 @@
         text-align: center;
     }
     .section1-info-desc-p {
-        height: 65vh;
-        overflow: scroll;
+        height: auto;
+        overflow-y: hidden;
         font-size: 1.1rem;
         margin-bottom: 5%;
     }

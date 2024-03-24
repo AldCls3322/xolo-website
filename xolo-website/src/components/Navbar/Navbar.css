@@ -30,6 +30,12 @@
     padding: 10px;
     will-change: transform, opacity, filter;
     text-decoration: none;
+
+    transition: all 0.5s;
+}
+
+.menu-option:hover{
+    color: var(--color-contrast3dark);
 }
 
 .menu-ul,
@@ -71,4 +77,10 @@
 
 .navbar-button path {
     fill: var(--color-text);
+}
+
+@media screen and (max-width: 700px) {
+    .menu-container {
+        width: 100%;
+    }
 }

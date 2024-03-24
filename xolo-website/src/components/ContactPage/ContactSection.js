@@ -1,11 +1,42 @@
 import React, { useState, useEffect, forwardRef } from "react";
+import emailjs from '@emailjs/browser';
 import { MdPhone, MdLocationPin, MdEmail } from "react-icons/md";
 import { motion } from "framer-motion";
 // import Map from './Map';
 // import credentials from './credential';
 import './ContactSection.css'
+// import { error } from "console";
 
 function ContactSection() {
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const serviceId = "service_nq9h5eh";
+    const templateId = "template_fgfseji";
+    const publicKey = "-gj07iGaVgIAwDBYP";
+
+    const templateParms ={
+      from_email: email,
+      subject: subject,
+      message: message,
+    };
+
+    emailjs.send(serviceId, templateId, templateParms, publicKey)
+      .then((response) => {
+        console.log('Email sent successfully', response);
+        setEmail('');
+        setSubject('');
+        setMessage('');
+      })
+      .catch((error) => {
+        console.log('Error sending email', error);
+      });
+  }
+
   return (
     <div className="Container" id="contact-section-container">
       <motion.div
@@ -27,18 +58,22 @@ function ContactSection() {
         <div className="contact-section-cardwhite-bar" />
         <div className="contact-section-cardwhite-contents">
           <div className="contact-section-cardwhite-mailsender">
-            <form>
+            <form onSubmit={handleSubmit}>
               <input
                 type="text"
                 className="form-address"
                 placeholder="Your Email Address"
                 name="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
               <input
                 type="text"
                 className="form-subject"
                 placeholder="Subject"
                 name="subject"
+                value={subject}
+                onChange={(e) => setSubject(e.target.value)}
               />
               <textarea
                 className="form-message"
@@ -46,6 +81,8 @@ function ContactSection() {
                 rows="15"
                 placeholder="Your Message"
                 name="message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
               />
               <input type="submit" className="btn-snd-email" value="SEND" />
             </form>

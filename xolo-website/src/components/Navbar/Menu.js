@@ -10,16 +10,22 @@ function Menu({ toggle, backToTop }) {
     [0, 0.1],
     ["var(--color-body80)", "var(--color-body98)"]
   );
+
+  function clickedMenuOption () {
+    backToTop();
+    toggle();
+  };
+
   return (
     <motion.nav className="menu-container" style={{ background }}>
       <ul className="menu-ul">
-        <Link className="menu-option" onClick={(toggle, backToTop)} to="/">
+        <Link className="menu-option" onClick={function(){ toggle(); backToTop();}} to="/">
           Home
         </Link>
-        <Link className="menu-option" onClick={(toggle, backToTop)} to="/about">
+        <Link className="menu-option" onClick={clickedMenuOption} to="/about">
           About
         </Link>
-        <Link className="menu-option" onClick={(toggle, backToTop)} to="/contact">
+        <Link className="menu-option" onClick={clickedMenuOption} to="/contact">
           Contact
         </Link>
       </ul>

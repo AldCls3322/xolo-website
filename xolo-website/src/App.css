@@ -50,6 +50,37 @@
   display: inline-block;
 }
 
+.noisey-overlay-container{
+  position: absolute;
+  top: 0;
+  z-index: 21;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.noisey-overlay-effect {
+  position: fixed;
+  z-index: 21;
+  inset: -200%;
+  /* background-color: red; */
+  background-image: url("./components/imgs/white-noise-png-2.png");
+  opacity: 2%;
+
+  animation: shift 0.2s linear infinite both;
+}
+
+@keyframes shift {
+  0% {
+    transform: translateX(10%) translateY(10%);
+  }
+  100% {
+    transform: translateX(-10%) translateY(-10%);
+  }
+  
+}
+
 /***---PHONE SCREENS---***/
 @media screen and (max-width: 700px){
   .Container {
