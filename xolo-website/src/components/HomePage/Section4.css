@@ -66,22 +66,22 @@
 }
 
 .expect-img-wrapper {
-    width: 80%;
-    padding-left: 10%;
-    padding-right: 10%;
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
     /* height: 31.38em; */
     max-width: 38.75em;
-    margin-top: auto;
+    margin-top: 4rem;
 }
 
 .img-full-width.img-radius-64 {
     border-radius: 64px;
-    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 80%;
     max-width: 100%;
     object-fit: cover;
     vertical-align: middle;
-    display: inline-block;
-    border: 0;
 }
 
 .expect-card-list {
@@ -209,6 +209,9 @@
         width: 90%;
         margin-right: 5%;
         padding-right: 0;
+    }
+    .expect-img-wrapper {
+        margin-top: 1rem;
     }
     .expect-card-list {
         margin-top: 2em;

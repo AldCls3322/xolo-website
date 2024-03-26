@@ -1,6 +1,6 @@
 import React from 'react'
 import './Section2.css'
-import Img from '../imgs/black.jpg'
+import Img from '../imgs/1696347219295.jpeg'
 import { motion } from 'framer-motion';
 
 function Section2() {
@@ -76,14 +76,14 @@ function Section2() {
                             >
                               <img
                                 data-stretch="true"
-                                data-src="https://images.squarespace-cdn.com/content/v1/646440f2deeb795976ea56e0/523f9ac5-0f37-4652-a231-6d7a84a891aa/Screenshot+2023-05-17+at+18.06.32.png"
-                                data-image="https://images.squarespace-cdn.com/content/v1/646440f2deeb795976ea56e0/523f9ac5-0f37-4652-a231-6d7a84a891aa/Screenshot+2023-05-17+at+18.06.32.png"
+                                data-src={Img}
+                                data-image={Img}
                                 data-image-dimensions="544x1230"
                                 data-image-focal-point="0.8982044394175032,0.7920495030939434"
                                 alt=""
                                 data-load="false"
                                 elementtiming="system-image-block"
-                                src="https://images.squarespace-cdn.com/content/v1/646440f2deeb795976ea56e0/523f9ac5-0f37-4652-a231-6d7a84a891aa/Screenshot+2023-05-17+at+18.06.32.png"
+                                src={Img}
                                 width="544"
                                 height="1230"
                                 sizes="100vw"
@@ -147,14 +147,14 @@ function Section2() {
                             >
                               <img
                                 data-stretch="true"
-                                data-src="https://images.squarespace-cdn.com/content/v1/646440f2deeb795976ea56e0/12c9c2ca-8d70-4275-8559-64be2cd4415c/Screenshot+2023-05-17+at+18.06.48.png"
-                                data-image="https://images.squarespace-cdn.com/content/v1/646440f2deeb795976ea56e0/12c9c2ca-8d70-4275-8559-64be2cd4415c/Screenshot+2023-05-17+at+18.06.48.png"
+                                data-src={Img}
+                                data-image={Img}
                                 data-image-dimensions="544x1234"
                                 data-image-focal-point="0.28225120499007655,0.8401050131266408"
                                 alt=""
                                 data-load="false"
                                 elementtiming="system-image-block"
-                                src="https://images.squarespace-cdn.com/content/v1/646440f2deeb795976ea56e0/12c9c2ca-8d70-4275-8559-64be2cd4415c/Screenshot+2023-05-17+at+18.06.48.png"
+                                src={Img}
                                 width="544"
                                 height="1234"
                                 sizes="100vw"
@@ -203,14 +203,16 @@ function Section2() {
                     id="block-yui_3_17_2_1_1684341679213_11245"
                   >
                     <p class="preFlex flexIn">
-                      We envision a world where technology serves as an extension of the self. We want to make the human and AI <strong>relationship</strong>{" "}
-                      possible.
+                      We envision a world where technology serves as an
+                      extension of the self. We want to make the human and AI{" "}
+                      <strong>relationship</strong> possible.
                       <br />
                     </p>
                     <p class="preFlex flexIn">
-                      <strong>Dory</strong> is our first step towards reaching this goal.
-                      As more people connect and gain the freedom to express and develop themeselfs,
-                      our interactions will become more humane.
+                      <strong>Dory</strong> is our first step towards reaching
+                      this goal. As more people connect and gain the freedom to
+                      express and develop themselves, our interactions will
+                      become more humane.
                     </p>
                   </div>
                 </div>

@@ -2,7 +2,6 @@ import React, { forwardRef, useState, useEffect } from 'react';
 import {NavLink as Link} from 'react-router-dom';
 import { motion } from 'framer-motion';
 import './HomeTitle.css';
-import HomeTitleImage from '../imgs/black2.jpg';
 import { TypeAnimation } from './TypeAnimation';
 
 const text = [

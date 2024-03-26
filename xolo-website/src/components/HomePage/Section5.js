@@ -1,35 +1,38 @@
 import React from "react";
 import "./Section5.css";
+import EyeSVG from "../imgs/eye-private-retina-svgrepo-com.svg";
 import { motion } from "framer-motion";
 
 function Section5() {
   return (
     <div className="Container" id="sections5-container">
-      <motion.div className="section5-2div-container"
-          initial={{
-            opacity: 0,
-            x: -30,
-          }}
-          whileInView={{
-            opacity: 1,
-            x: 0,
-            transition: {
-              duration: 2,
-            },
-          }}
-          viewport={{ once: true }}>
+      <motion.div
+        className="section5-2div-container"
+        initial={{
+          opacity: 0,
+          x: -30,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          transition: {
+            duration: 2,
+          },
+        }}
+        viewport={{ once: true }}
+      >
         <div className="section5-div-container" id="section5-left-div">
           <div className="section5-text-info-container">
             <div className="section5-text-info-header">KEY ASPECTS</div>
             <div class="section5-text-info-desc">
-              <div class="section5-text-info-img-container">
+              {/* <div class="section5-text-info-img-container">
                 <img
                   className="section5-text-info-img"
                   src="https://webdesign-studio-leipzig.de/wp-content/uploads/2024/01/SEO-in-Leipzig.webp"
                   alt=""
                   srcset="https://webdesign-studio-leipzig.de/wp-content/uploads/2024/01/SEO-in-Leipzig.webp 313w, https://webdesign-studio-leipzig.de/wp-content/uploads/2024/01/SEO-in-Leipzig-300x300.webp 300w, https://webdesign-studio-leipzig.de/wp-content/uploads/2024/01/SEO-in-Leipzig-150x150.webp 150w"
                 />
-              </div>
+              </div> */}
               <div class="section5-text-info-list-container">
                 <ul class="section5-text-info-list">
                   <li class="section5-text-info-list-item">
@@ -89,7 +92,7 @@ function Section5() {
                       </svg>
                     </span>
                     <span class="section5-text-info-list-text">
-                      Monthly subscription for as many messages you want to have
+                      Monthly subscription for as many messages as you want to have
                     </span>
                   </li>
                 </ul>
@@ -98,7 +101,7 @@ function Section5() {
           </div>
         </div>
         <div className="section5-div-container" id="section5-right-div">
-          insert IMG
+          <img src={EyeSVG} className="section5-div-right-svg-img" />
         </div>
       </motion.div>
     </div>

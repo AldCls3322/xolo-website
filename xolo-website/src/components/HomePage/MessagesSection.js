@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavLink as Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import "./MessagesSection.css";
 import Logo from "../imgs/xoloblack.png";
 import { FaUser } from "react-icons/fa";
@@ -11,85 +12,203 @@ import { IoSend } from "react-icons/io5";
 function MessagesSection() {
   return (
     <div className="Container" id="messages-section-container">
-      <div className="xolo-message-container">
+      <motion.div
+        className="xolo-message-container"
+        initial={{
+          opacity: 0,
+          x: -100,
+          scale: 0.1,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          scale: 1,
+          transition: {
+            duration: 0.5,
+          },
+        }}
+        viewport={{ once: true }}
+      >
         <div className="xolo-message-icon">
           <img className="xoloLogo-message" src={Logo} />
         </div>
-        <div className="received-message">Hello! Welcome to Xolo!</div>
-      </div>
+        <div className="received-message-wrapper">
+          <div className="received-message">
+            <p className="received-message-p">Hello! Welcome to Xolo!</p>
+          </div>
+        </div>
+      </motion.div>
 
-      <div className="user-message-container">
+      <motion.div
+        className="user-message-container"
+        initial={{
+          opacity: 0,
+          x: 100,
+          scale: 0.1,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          scale: 1,
+          transition: {
+            duration: 0.5,
+          },
+        }}
+        viewport={{ once: true }}
+      >
         <div className="sent-message">Hello!</div>
         <div className="user-message-icon">
           <FaUser className="userLogo-message" />
         </div>
-      </div>
+      </motion.div>
 
-      <div className="xolo-message-container">
+      <motion.div
+        className="xolo-message-container"
+        initial={{
+          opacity: 0,
+          x: -100,
+          scale: 0.1,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          scale: 1,
+          transition: {
+            duration: 0.5,
+          },
+        }}
+        viewport={{ once: true }}
+      >
         <div className="xolo-message-icon">
           <img className="xoloLogo-message" src={Logo} />
         </div>
         <div className="received-message">
           <p className="received-message-p">
-            I will be showing you around and introduce you to Dory!
+            I will be showing you around and introducing you to Dory!
           </p>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="user-message-container">
-        <div className="sent-message">Sure thing, please tell me!</div>
+      <motion.div
+        className="user-message-container"
+        initial={{ 
+          opacity: 0, 
+          x: 100, 
+          scale: 0.1 
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          scale: 1,
+          transition: {
+            duration: 0.5,
+          },
+        }}
+        viewport={{ once: true }}
+      >
+        <div className="sent-message">
+          <p className="received-message-p">
+            Sure thing, <br />
+            please tell me!
+          </p>
+        </div>
         <div className="user-message-icon">
           <FaUser className="userLogo-message" />
         </div>
-      </div>
+      </motion.div>
 
-      <div className="xolo-message-container">
+      <motion.div
+        className="xolo-message-container"
+        initial={{
+          opacity: 0,
+          x: -100,
+          scale: 0.1,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          scale: 1,
+          transition: {
+            duration: 0.5,
+          },
+        }}
+        viewport={{ once: true }}
+      >
         <div className="xolo-message-icon">
           <img className="xoloLogo-message" src={Logo} />
         </div>
         <div className="received-message-wrapper">
           <div className="received-message">
             <p className="received-message-p">
-              Xolo was born out of inevitablility, it is a meeting point between technology
-              and the tools <br />
-              we use as humans.
+              Xolo was born out of inevitability, it is a meeting point between
+              technology and the tools we use as humans.
             </p>
           </div>
           <div className="received-message">
             <p className="received-message-p">
-              We are focused on developing the most innovative technology in the most natural
-              and simple <br />
-              way. Hence, Dory was created!
+              We are focused on developing the most innovative technology in the
+              most natural and simple way. Hence, Dory was created!
             </p>
           </div>
           <div className="received-message">
             <p className="received-message-p">
-              Dory can be that companion everyone needs. It has
-              the <br />
-              cappacity to learn from you, and most surely you will learn from
-              it.
+              Dory can be that companion everyone needs. It has the capacity to
+              learn from you, and most surely you will learn from it.
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="user-message-container">
-        <div className="sent-message">WOW! But... what exactly is Dory?</div>
+      <motion.div className="user-message-container" 
+      initial={{ 
+          opacity: 0, 
+          x: 100, 
+          scale: 0.1 
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          scale: 1,
+          transition: {
+            duration: 0.5,
+          },
+        }}
+        viewport={{ once: true }}>
+        <div className="sent-message">
+          <p className="received-message-p">
+            WOW! But... what exactly is Dory?
+          </p>
+        </div>
         <div className="user-message-icon">
           <FaUser className="userLogo-message" />
         </div>
-      </div>
+      </motion.div>
 
-      <div className="xolo-message-container">
+      <motion.div
+        className="xolo-message-container"
+        initial={{
+          opacity: 0,
+          x: -100,
+          scale: 0.1,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          scale: 1,
+          transition: {
+            duration: 0.5,
+          },
+        }}
+        viewport={{ once: true }}
+      >
         <div className="xolo-message-icon">
           <img className="xoloLogo-message" src={Logo} />
         </div>
         <div className="received-message-wrapper">
           <div className="received-message">
             <p className="received-message-p">
-              Dory is a, AI Companion developed arround different technologies,<br />
-              cappable of having full fledge conversations. You
-              will be able to <br />
+              Dory is a, AI Companion developed around different technologies,
+              capable of having full fledge conversations. You will be able to
               ask her any question, and chat with her about any topic!
             </p>
           </div>
@@ -102,10 +221,8 @@ function MessagesSection() {
           </div> */}
           <div className="received-message">
             <p className="received-message-p">
-              Of course, there will be lots more things we have to teach
-              it, so you
-              <br />
-              might need to be patient with her before sending memes to her.
+              Of course, there will be lots more things we have to teach it, so
+              you might need to be patient with her before sending memes to her.
               <span>
                 {" "}
                 <BsEmojiGrin />
@@ -113,9 +230,23 @@ function MessagesSection() {
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="user-message-container">
+      <motion.div className="user-message-container"
+      initial={{ 
+          opacity: 0, 
+          x: 100, 
+          scale: 0.1 
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          scale: 1,
+          transition: {
+            duration: 0.5,
+          },
+        }}
+        viewport={{ once: true }}>
         <div className="sent-message">
           <p className="received-message-p">
             Sounds very cool! How can I be a part of it?
@@ -124,20 +255,19 @@ function MessagesSection() {
         <div className="user-message-icon">
           <FaUser className="userLogo-message" />
         </div>
-      </div>
+      </motion.div>
 
-      <div className="xolo-message-container">
+      <motion.div className="xolo-message-container">
         <div className="xolo-message-icon">
           <img className="xoloLogo-message" src={Logo} />
         </div>
         <div className="received-message">
           <p className="received-message-p">
-            You'll need to subscribe by clicking below. Make sure to
-            browse our <br />
-            website for any other question, or feel free to contact us!
+            You'll need to subscribe by clicking below. Make sure to browse our
+            website for any other questions, or feel free to contact us!
           </p>
         </div>
-      </div>
+      </motion.div>
 
       <div className="messages-section-button-container">
         <Link

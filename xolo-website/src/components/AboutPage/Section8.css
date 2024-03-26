@@ -24,7 +24,7 @@
 }
 .section8-info-img-container svg {
     border-radius: 10px;
-    background: url(../imgs/white01.jpg);
+    background: url(../imgs/pexels-anni-roenkae-2832432.jpg);
     background-size: cover;
     width: 50vmin;
     height: auto;
@@ -45,6 +45,21 @@
     height: auto;
     text-align: left;
     margin-left: 3%;
+}
+
+.section8-info-desc-p {
+    /* Positioning */
+
+    /* Display & Box Model | Sizing */
+    /* text-align: justify; */
+    width: 100%;
+
+    /* Color, Background & Text */
+    font-family: serif, Times;
+    font-size: 2rem;
+    color: var(--color-text90);
+
+    /* Animations and Other */
 }
 
 /***---PHONE SCREENS---***/

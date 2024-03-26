@@ -1,5 +1,5 @@
 import React from 'react';
-import Img from '../imgs/white02.jpg';
+import Img from '../imgs/pexels-google-deepmind-18069693.jpg';
 import "../HomePage/Section1.css";
 import "./Section6.css";
 import { motion } from 'framer-motion';
@@ -35,14 +35,14 @@ function Section6() {
           <AnimatedText
             className="section6-info-desc-p"
             once
-            text="Dory is the product."
+            text="Dory is our implementation to connect you with AI."
             el="p"
             settingDelay={4}
           />
           <AnimatedText
             className="section6-info-desc-p"
             once
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis eros eu dui faucibus faucibus sed sit amet sapien."
+            text="Capable of maintaining a conversation with you. Besides from telling you jokes, learning from you, and even sending you images, we advise you to try Dory. Test her limits and be amazed by how technology has become humane."
             el="p"
             settingDelay={6}
           />

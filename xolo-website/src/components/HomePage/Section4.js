@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './Section4.css';
-import Img from "../imgs/white02.jpg";
+import Img from "../imgs/pexels-brett-jordan-7568292.jpg";
+import ImgSVG from "../imgs/artificial-intelligence-svgrepo-com.svg"
 import { delay, motion } from "framer-motion";
 
 function Section4() {
@@ -32,12 +33,13 @@ function Section4() {
                 </div>
                 <div class="expect-subheading-wrapper">
                   <p class="text-size-20">
-                    Dory is an AI Companion that you can chat with, through Whatsapp. As
-                    you start chatting with Dory, you will receive your own chatting experience. <br />
+                    Dory is an AI Companion that you can chat with, through
+                    Whatsapp. As you start chatting with Dory, you will receive
+                    your own chatting experience. <br />
                     <br />
-                    Dory will text you back once you start the conversation. Generating a realistic
-                    answer to your questions, give you advices, and tell you
-                    jokes!
+                    Dory will text you back once you start the conversation.
+                    Generating a realistic answer to your questions, give you
+                    advices, and tell you jokes!
                   </p>
                 </div>
                 <div class="expect-img-wrapper">
@@ -49,8 +51,10 @@ function Section4() {
                     animate={
                       isInView
                         ? {
-                            WebkitMaskImage: "repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 0px, rgba(0,0,0,1) 0px, rgba(0,0,0,1) 30px)",
-                            maskImage: "repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 0px, rgba(0,0,0,1) 0px, rgba(0,0,0,1) 30px)",
+                            WebkitMaskImage:
+                              "repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 0px, rgba(0,0,0,1) 0px, rgba(0,0,0,1) 30px)",
+                            maskImage:
+                              "repeating-linear-gradient(to right, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 0px, rgba(0,0,0,1) 0px, rgba(0,0,0,1) 30px)",
                           }
                         : {
                             WebkitMaskImage:
@@ -195,7 +199,8 @@ function Section4() {
                       </div>
                     </div>
                     <p class="text-size-25">
-                      Dory will learn as you converse with it, developing an ever more complex personality.
+                      Dory will learn as you converse with it, developing an
+                      ever more complex personality.
                     </p>
                   </div>
                 </div>

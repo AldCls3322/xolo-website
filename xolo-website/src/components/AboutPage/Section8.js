@@ -1,5 +1,4 @@
 import React from 'react';
-import Img from '../imgs/white01.jpg';
 import "../HomePage/Section1.css";
 import "./Section8.css";
 import { motion } from "framer-motion";
@@ -83,23 +82,20 @@ function Section8() {
           </svg>
         </div>
         <div className="section8-info-desc-container">
-          <h2 className="section1-info-desc-title">XOLO</h2>
-          <p className="section1-info-desc-p">
-            We are Xolo, a tech company based in Mexico looking for 
-            the Opportunity to connect, grow and develop alongside technology. 
-            <br />
-            <br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            convallis eros eu dui faucibus faucibus sed sit amet sapien.
-            <br />
-            <br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            convallis eros eu dui faucibus faucibus sed sit amet sapien. Duis
-            imperdiet quis metus sit amet fermentum.
-            <br />
-            <br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p> */}
+          <AnimatedText
+            className="section1-info-desc-title"
+            once
+            text="XOLO"
+            el="h2"
+            settingDelay={3}
+          />
+          <AnimatedText
+            className="section8-info-desc-p"
+            once
+            text="We are Xolo, a tech company based in Mexico looking for the opportunity to connect, grow and develop alongside technology."
+            el="p"
+            settingDelay={4}
+          />
         </div>
       </div>
     </motion.div>

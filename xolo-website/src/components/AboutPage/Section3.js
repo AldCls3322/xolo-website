@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import coverImg from '../imgs/black03.jpg';
+import coverImg from '../imgs/artificial-intelligence-svgrepo-com.svg';
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import '../HomePage/Section1.css';
 import './Section3.css';
@@ -80,15 +80,7 @@ function Section3() {
           />
           <AnimatedText
             once
-            text="She can make even make jokes. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Sed convallis eros eu dui faucibus
-            faucibus sed sit amet sapien. Duis imperdiet quis metus sit amet
-            fermentum. Nunc sit amet ultricies nisi. Maecenas ac enim arcu. Ut
-            eu quam porta, convallis orci ac, gravida enim. Nunc egestas felis
-            et orci cursus faucibus. Nunc ultricies vitae sem lacinia blandit.
-            Nunc eget lectus eget nibh fringilla rutrum in sed mauris. Nulla
-            blandit efficitur velit nec interdum. Mauris scelerisque enim id dui
-            luctus auctor. Maecenas sed arcu odio."
+            text="She can even make jokes. As we developped Dory, quickly she became one of the proudest projects we developed. Dory is more than just an AI, it's a friend waiting to meet you through the simplicity of Whatsapp. This AI Companion breaks through the barriers of technology, making every chat not just interactive but genuinely meaningful. She embodies Xolo's dream of blending advanced technology with the effortless charm of human connection, ensuring that every conversation feels like a step closer to a future where technology truly understands and complements the nuances of your life. It’s not just about the words exchanged; it’s about forming a bond that enriches your daily experiences, making Dory not just an innovative product but a personal journey towards a more connected world."
             el="p"
             className="section3-info-desc-p section1-info-desc-p"
             settingDelay={2.5}

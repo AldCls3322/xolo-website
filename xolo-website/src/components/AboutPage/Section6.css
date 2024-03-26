@@ -65,11 +65,11 @@
     /* Positioning */
 
     /* Display & Box Model | Sizing */
-    text-align: justify;
+    text-align: right;
 
     /* Color, Background & Text */
     font-family: serif, Times;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--color-text90);
     /* margin: 0; */
 

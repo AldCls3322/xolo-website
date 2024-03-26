@@ -1,5 +1,5 @@
 import React from 'react';
-import Img from '../imgs/white01.jpg';
+import Img from '../imgs/xolo_team.JPG';
 import "../HomePage/Section1.css";
 import "./Section7.css";
 
