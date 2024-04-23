@@ -210,6 +210,7 @@
     }
     .expect-img-wrapper {
         margin-top: 1rem;
+        max-height: 30vh;
     }
     .expect-card-list {
         margin-top: 2em;

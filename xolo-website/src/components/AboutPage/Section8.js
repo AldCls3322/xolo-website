@@ -48,7 +48,7 @@ function Section8() {
         <div className="section8-info-img-container">
           <svg viewbox="0 0 50vmin 50vmin" width="50vmin" height="50vmin">
             <defs>
-              <mask id="mask" x="0" y="0" width="100vmin" height="50vmin">
+              <mask id="section8-mask" x="0" y="0" width="46vmin" height="46vmin">
                 <rect
                   x="2vmin"
                   y="2vmin"
@@ -73,11 +73,12 @@ function Section8() {
             <rect
               x="2vmin"
               y="2vmin"
-              width="49vmin"
-              height="49vmin"
-              mask="url(#mask)"
-              fill-opacity="1"
+              width="48vmin"
+              height="48vmin"
+              mask="url(#section8-mask)"
+              mask-opacity="1"
               fill="var(--color-body)"
+              
             />
           </svg>
         </div>

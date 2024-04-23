@@ -46,6 +46,10 @@
     margin-left: 3%;
 }
 
+/* svg {
+    shape-rendering: crispEdges;
+} */
+
 .section8-info-desc-p {
     /* Positioning */
 
