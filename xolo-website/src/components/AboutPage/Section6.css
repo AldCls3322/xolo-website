@@ -54,7 +54,6 @@
 
     /* Color, Background & Text */
     font-size: 3rem;
-    font-family: verdana, Sans-serif;
     font-weight: 600;
     color: var(--color-contrast);
 
@@ -65,10 +64,9 @@
     /* Positioning */
 
     /* Display & Box Model | Sizing */
-    text-align: right;
+    text-align: justify;
 
     /* Color, Background & Text */
-    font-family: serif, Times;
     font-size: 2rem;
     color: var(--color-text90);
     /* margin: 0; */

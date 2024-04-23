@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink as Link } from "react-router-dom";
 import { FaInstagram, FaFacebook, FaGooglePlus } from "react-icons/fa";
+import { ImMail4 } from "react-icons/im";
 import './Footer.css';
 
 function Footer({ backToTop }) {
@@ -8,7 +9,10 @@ function Footer({ backToTop }) {
     <div className="Container" id="footer-container">
       <div className="footer-links-container">
         <div className="footer-links-icons-wrapper">
-          <Link className="footer-socialmedia-icon-wrapper">
+          <Link
+            className="footer-socialmedia-icon-wrapper"
+            to="https://www.facebook.com/share/SpQRZAnuP7Af6ZYS/?mibextid=LQQJ4d"
+          >
             <FaFacebook className="footer-socialmedia-icon" />
           </Link>
           <Link
@@ -17,8 +21,12 @@ function Footer({ backToTop }) {
           >
             <FaInstagram className="footer-socialmedia-icon" />
           </Link>
-          <Link className="footer-socialmedia-icon-wrapper">
-            <FaGooglePlus className="footer-socialmedia-icon" />
+          <Link
+            className="footer-socialmedia-icon-wrapper"
+            to="/contact"
+            onClick={backToTop}
+          >
+            <ImMail4 className="footer-socialmedia-icon" />
           </Link>
         </div>
         <div className="footer-links-desc-wrapper">

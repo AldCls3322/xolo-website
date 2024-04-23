@@ -158,7 +158,6 @@
 
     /* Color, Background & Text */
     font-size: 3rem;
-    font-family: verdana, Sans-serif;
     font-weight: 600;
     color: var(--color-contrast);
 
@@ -173,7 +172,6 @@
     width: 100%;
 
     /* Color, Background & Text */
-    font-family: serif, Times;
     font-size: 1.5rem;
     color: var(--color-text90);
 
@@ -255,7 +253,6 @@
     }
     h2 {
         font-size: 1.7rem;
-        font-family: comfortaa;
     }
     .section1-info-container {
         display: block;

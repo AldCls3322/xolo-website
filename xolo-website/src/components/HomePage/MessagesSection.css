@@ -65,7 +65,7 @@
     min-width: 190px;
     min-height: 70px;
     max-width: 55%;
-    background: var(--color-body);
+    background: var(--color-messages-background);
     border-radius: 0px 15px 15px 10px;
     margin-right: auto;
 
@@ -79,7 +79,7 @@
     font-size: 1.5rem;
     text-align: left;
 
-    box-shadow: 0 0 20px 2px var(--color-contrast);
+    box-shadow: 0 0 15px 1px var(--color-text);
     text-shadow: 0 0 5px var(--color-contrastlightest);
 }
 .received-message:before {
@@ -92,7 +92,7 @@
     width: 40px;
     border-bottom-left-radius: 50%;
     background: transparent;
-    box-shadow: 0 20px 0 0 var(--color-body);
+    box-shadow: 0 20px 0 0 var(--color-messages-background);
 }
 .received-message-p {
     position: relative;

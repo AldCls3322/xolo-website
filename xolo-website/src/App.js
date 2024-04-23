@@ -23,7 +23,7 @@ const Section1 = lazy(() => import('./components/HomePage/Section1'))
 const HomeGrid = lazy(() => import('./components/HomePage/HomeGrid'))
 const Section4 = lazy(() => import("./components/HomePage/Section4"))
 const Section5 = lazy(() => import("./components/HomePage/Section5"))
-const VideoPlayerSection = lazy(() => import("./components/HomePage/VideoPlayerSection"))
+// const VideoPlayerSection = lazy(() => import("./components/HomePage/VideoPlayerSection"))
 
 const Section2 = lazy(() => import('./components/AboutPage/Section2'))
 const Section3 = lazy(() => import('./components/AboutPage/Section3'))

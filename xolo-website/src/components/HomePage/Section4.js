@@ -33,9 +33,9 @@ function Section4() {
                 </div>
                 <div class="expect-subheading-wrapper">
                   <p class="text-size-20">
-                    Dory is an AI Companion that you can chat with, through
-                    Whatsapp. As you start chatting with Dory, you will receive
-                    your own chatting experience. <br />
+                    Dory is an <strong>AI Companion</strong> that you can chat
+                    with, through Whatsapp. As you start chatting with Dory, you
+                    will receive your own chatting experience. <br />
                     <br />
                     Dory will text you back once you start the conversation.
                     Generating a realistic answer to your questions, give you
@@ -46,7 +46,7 @@ function Section4() {
                   <motion.img
                     src={Img}
                     alt="dory chat"
-                    class="img-full-width img-radius-64"
+                    class="img-details"
                     initial={false}
                     animate={
                       isInView

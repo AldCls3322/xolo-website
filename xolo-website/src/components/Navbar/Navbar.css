@@ -31,7 +31,7 @@
     will-change: transform, opacity, filter;
     text-decoration: none;
 
-    transition: all 0.5s;
+    transition: all;
 }
 
 .menu-option:hover{

@@ -48,7 +48,7 @@ function Section8() {
         <div className="section8-info-img-container">
           <svg viewbox="0 0 50vmin 50vmin" width="50vmin" height="50vmin">
             <defs>
-              <mask id="mask" x="0" y="0" width="100vmin" height="49vmin">
+              <mask id="mask" x="0" y="0" width="100vmin" height="50vmin">
                 <rect
                   x="2vmin"
                   y="2vmin"

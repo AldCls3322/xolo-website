@@ -1,7 +1,7 @@
 #header-container {
     /* Positioning */
     position: -webkit-sticky; /* makes the header be always atop no matter if you scroll */
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 19;
 

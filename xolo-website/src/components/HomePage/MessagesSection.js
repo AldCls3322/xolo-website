@@ -91,10 +91,63 @@ function MessagesSection() {
 
       <motion.div
         className="user-message-container"
-        initial={{ 
-          opacity: 0, 
-          x: 100, 
-          scale: 0.1 
+        initial={{
+          opacity: 0,
+          x: 100,
+          scale: 0.1,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          scale: 1,
+          transition: {
+            duration: 0.5,
+          },
+        }}
+        viewport={{ once: true }}
+      >
+        <div className="sent-message">
+          <p className="received-message-p">But... who are you??</p>
+        </div>
+        <div className="user-message-icon">
+          <FaUser className="userLogo-message" />
+        </div>
+      </motion.div>
+
+      <motion.div
+        className="xolo-message-container"
+        initial={{
+          opacity: 0,
+          x: -100,
+          scale: 0.1,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          scale: 1,
+          transition: {
+            duration: 0.5,
+          },
+        }}
+        viewport={{ once: true }}
+      >
+        <div className="xolo-message-icon">
+          <img className="xoloLogo-message" src={Logo} />
+        </div>
+        <div className="received-message">
+          <p className="received-message-p">
+            I'm Xolo, a company that develops different interesing projects.
+            Meanwhile, Dory is our main product! I can tell you more about it.
+          </p>
+        </div>
+      </motion.div>
+
+      <motion.div
+        className="user-message-container"
+        initial={{
+          opacity: 0,
+          x: 100,
+          scale: 0.1,
         }}
         whileInView={{
           opacity: 1,
@@ -159,11 +212,12 @@ function MessagesSection() {
         </div>
       </motion.div>
 
-      <motion.div className="user-message-container" 
-      initial={{ 
-          opacity: 0, 
-          x: 100, 
-          scale: 0.1 
+      <motion.div
+        className="user-message-container"
+        initial={{
+          opacity: 0,
+          x: 100,
+          scale: 0.1,
         }}
         whileInView={{
           opacity: 1,
@@ -173,7 +227,8 @@ function MessagesSection() {
             duration: 0.5,
           },
         }}
-        viewport={{ once: true }}>
+        viewport={{ once: true }}
+      >
         <div className="sent-message">
           <p className="received-message-p">
             WOW! But... what exactly is Dory?
@@ -207,9 +262,9 @@ function MessagesSection() {
         <div className="received-message-wrapper">
           <div className="received-message">
             <p className="received-message-p">
-              Dory is a, AI Companion developed around different technologies,
+              Dory is an AI Companion developed around different technologies,
               capable of having full fledge conversations. You will be able to
-              ask her any question, and chat with her about any topic!
+              chat with her about any topic!
             </p>
           </div>
           {/* <div className="received-message">
@@ -232,11 +287,12 @@ function MessagesSection() {
         </div>
       </motion.div>
 
-      <motion.div className="user-message-container"
-      initial={{ 
-          opacity: 0, 
-          x: 100, 
-          scale: 0.1 
+      <motion.div
+        className="user-message-container"
+        initial={{
+          opacity: 0,
+          x: 100,
+          scale: 0.1,
         }}
         whileInView={{
           opacity: 1,
@@ -246,7 +302,8 @@ function MessagesSection() {
             duration: 0.5,
           },
         }}
-        viewport={{ once: true }}>
+        viewport={{ once: true }}
+      >
         <div className="sent-message">
           <p className="received-message-p">
             Sounds very cool! How can I be a part of it?
@@ -257,7 +314,23 @@ function MessagesSection() {
         </div>
       </motion.div>
 
-      <motion.div className="xolo-message-container">
+      <motion.div
+        className="xolo-message-container"
+        initial={{
+          opacity: 0,
+          x: -100,
+          scale: 0.1,
+        }}
+        whileInView={{
+          opacity: 1,
+          x: 0,
+          scale: 1,
+          transition: {
+            duration: 0.5,
+          },
+        }}
+        viewport={{ once: true }}
+      >
         <div className="xolo-message-icon">
           <img className="xoloLogo-message" src={Logo} />
         </div>
@@ -272,13 +345,13 @@ function MessagesSection() {
       <div className="messages-section-button-container">
         <Link
           className="messages-section-button1-textenter"
-          to="https://buy.stripe.com/4gw2aR7hfaTugCc6oo"
+          to="https://buy.stripe.com/14k3eV1WV0eQ99K6op"
         >
           Start your subscription!
         </Link>
         <Link
           className="messages-section-button2-textenter"
-          to="https://buy.stripe.com/4gw2aR7hfaTugCc6oo"
+          to="https://buy.stripe.com/14k3eV1WV0eQ99K6op"
         >
           <IoSend className="messages-section-button2-icon" />
         </Link>

@@ -36,7 +36,6 @@
     font-size: 18vmin;
     /* line-height: 100px; */
     font-weight: 900;
-    font-family: arial;
 }
 
 .section8-info-desc-container {
@@ -53,9 +52,10 @@
     /* Display & Box Model | Sizing */
     /* text-align: justify; */
     width: 100%;
+    margin-top: 20%;
+    text-align: justify;
 
     /* Color, Background & Text */
-    font-family: serif, Times;
     font-size: 2rem;
     color: var(--color-text90);
 
@@ -76,6 +76,11 @@
         margin: 0;
         margin-top: 2rem;
         margin-bottom: 1rem;
+    }
+    .section8-info-desc-p {
+        text-align: center;
+        overflow-y: hidden;
+        font-size: 1.1rem;
     }
     .section8-info-desc-container {
         width: 100%;

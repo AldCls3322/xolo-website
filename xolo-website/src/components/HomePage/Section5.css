@@ -33,20 +33,6 @@
     padding-inline-start: 0;
     padding-inline-end: 0;
     height: 100%;
-
-    font-family: -apple-system,
-        BlinkMacSystemFont,
-        Segoe UI,
-        Roboto,
-        Helvetica Neue,
-        Arial,
-        Noto Sans,
-        sans-serif,
-        Apple Color Emoji,
-        Segoe UI Emoji,
-        Segoe UI Symbol,
-        Noto Color Emoji;
-    
     background-color: var(--color-body);
     border-radius: 50px;
     box-shadow: var(--color-body80) 0px 54px 55px, var(--color-body40) 0px -12px 30px, var(--color-body40) 0px 4px 6px, var(--color-body30) 0px 12px 13px, var(--color-body20) 0px -3px 5px;
@@ -152,7 +138,6 @@
 .section5-text-info-list-text {
     width: 70%;
     padding-left: 10%;
-    font-family: "Poppins", Sans-serif;
     font-size: 18px;
     font-weight: 300;
     text-align: left;

@@ -52,8 +52,6 @@
 
 .heading-48 {
     text-transform: capitalize;
-    /* font-family: Rubik, sans-serif;
-    font-size: 3em; */
     font-weight: 600;
     line-height: 1.2;
     margin-top: 0;
@@ -69,13 +67,13 @@
     width: 70%;
     padding-left: 15%;
     padding-right: 15%;
-    /* height: 31.38em; */
-    max-width: 38.75em;
+    max-height: 31.38rem;
+    max-width: 38.75rem;
     margin-top: 4rem;
 }
 
-.img-full-width.img-radius-64 {
-    border-radius: 64px;
+.img-details {
+    border-radius: 20%;
     margin-top: auto;
     margin-bottom: auto;
     height: 80%;
@@ -116,6 +114,7 @@
 .expected-card-item-header {
     display: flex;
     width: 100%;
+    height: 3rem;
     margin-bottom: 1rem;
     align-items: center;
     justify-content: center;
@@ -165,7 +164,6 @@
 
 .heading-24 {
     text-transform: capitalize;
-    font-family: Rubik, sans-serif;
     font-size: 1.6rem;
     font-weight: 800;
     line-height: 1.2;
@@ -193,13 +191,13 @@
 @media screen and (max-width: 700px) {
     #section4-container {
         width: 100%;
-        padding-bottom: 2em;
+        padding-bottom: 3em;
     }
     .page-padding {
         max-height: 100%;
         padding-left: 0;
         padding-right: 0;
-        margin-top: 5em;
+        margin-top: 2em;
     }
     .expect-wrapper {
         display: flex;

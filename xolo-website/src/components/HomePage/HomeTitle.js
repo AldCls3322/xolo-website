@@ -57,7 +57,7 @@ const HomeTitle = () => {
               <Link
                 className="button-64"
                 role="button"
-                to="https://buy.stripe.com/4gw2aR7hfaTugCc6oo"
+                to="https://buy.stripe.com/14k3eV1WV0eQ99K6op"
               >
                 <span class="text">Get Started!</span>
               </Link>

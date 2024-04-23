@@ -104,7 +104,7 @@ function ContactSection() {
         }}
         viewport={{ once: true }}
       >
-        admin@xolo.com
+        Send us a mail
       </motion.div>
     </div>
   );
