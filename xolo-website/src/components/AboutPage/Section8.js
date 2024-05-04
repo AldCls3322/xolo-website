@@ -25,7 +25,7 @@ function Section8() {
       <div className="section1-title-container">
         <div className="section1-shortbar" />
         <motion.h2
-          className="section1-title-text"
+          className="section8-title-text"
           initial={{
             opacity: 0,
             y: 50,

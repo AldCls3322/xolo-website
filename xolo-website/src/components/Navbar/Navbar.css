@@ -7,6 +7,7 @@
     width: 400px;
     background: var(--color-body98);
     margin-top: 10vh;
+    height: 90vh;
     transform: translateX(-100%);
     will-change: transform;
     -webkit-font-smoothing: antialiased;

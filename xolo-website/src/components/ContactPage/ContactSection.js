@@ -11,6 +11,8 @@ function ContactSection() {
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [stateMessage, setStateMessage] = useState(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -31,10 +33,20 @@ function ContactSection() {
         setEmail('');
         setSubject('');
         setMessage('');
+        setStateMessage("Message sent successfully");
+        setIsSubmitting(false);
+        setTimeout(() => {
+          setStateMessage(null);
+        }, 5000)
       })
       .catch((error) => {
         console.log('Error sending email', error);
+        setIsSubmitting(false);
+        setTimeout(() => {
+          setStateMessage(null);
+        }, 5000);
       });
+      e.target.reset();
   }
 
   return (
@@ -59,6 +71,25 @@ function ContactSection() {
         <div className="contact-section-cardwhite-contents">
           <div className="contact-section-cardwhite-mailsender">
             <form onSubmit={handleSubmit}>
+              {stateMessage && (
+                <motion.p
+                  className="contact-section-cardwhite-notification"
+                  initial={{
+                    opacity: 0,
+                    y: -100,
+                  }}
+                  whileInView={{
+                    opacity: 1,
+                    y: 0,
+                    transition: {
+                      duration: 1.5,
+                    },
+                  }}
+                  viewport={{ once: true }}
+                >
+                  {stateMessage}
+                </motion.p>
+              )}
               <input
                 type="text"
                 className="form-address"
@@ -84,7 +115,12 @@ function ContactSection() {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
               />
-              <input type="submit" className="btn-snd-email" value="SEND" />
+              <input
+                type="submit"
+                className="btn-snd-email"
+                value="SEND"
+                disabled={isSubmitting}
+              />
             </form>
           </div>
         </div>
